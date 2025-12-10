@@ -1,0 +1,6 @@
+Metode,Range Output,Robust to Outliers,Handle New Data,Stationary,Finance Literature,Rekomendasi
+Min-Max,"[0, 1]",❌ Tidak,❌ Buruk,❌ Tidak,✓ Jarang,3/5
+Standardization,"[-∞, +∞]",✓ Ya,✓✓ Baik,❌ Tidak,✓✓ Sering,5/5
+Robust Scaler,"[-∞, +∞]",✓✓ Sangat Ya,✓✓ Baik,❌ Tidak,✓ Jarang,4/5
+Log Transform,"[-∞, +∞]",✓ Ya,✓ Cukup,✓ Lebih baik,✓ Kadang,3/5
+Returns (No Norm),Varies,✓✓ Sangat Ya,✓✓✓ Excellent,✓✓ Ya,✓✓✓ Sangat Sering,5/5

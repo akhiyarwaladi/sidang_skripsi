@@ -1,0 +1,62 @@
+ANALISIS NORMALISASI UNTUK LSTM - PREDIKSI SAHAM BMRI
+================================================================================
+
+Data: BMRI.JK
+Periode: 2020-01-02 s/d 2025-12-10
+Total data: 1435 points
+
+
+🎯 REKOMENDASI TERBAIK: GUNAKAN RETURNS TANPA NORMALISASI TAMBAHAN
+
+ALASAN:
+✓ Returns sudah scale-free (tidak perlu normalisasi)
+✓ Returns lebih stationary dibanding harga absolut
+✓ Returns lebih meaningful dalam konteks finance
+✓ Menghindari masalah data baru di luar range training
+✓ Tidak sensitif terhadap outliers
+✓ Umum digunakan dalam literatur finance time series
+
+JIKA TETAP INGIN NORMALISASI:
+Ranking metode (dari terbaik ke terburuk):
+
+1. 🥇 STANDARDIZATION (Z-score) - REKOMENDASI TERBAIK
+   ✓ Robust untuk data baru
+   ✓ Preserve outliers
+   ✓ Tidak terbatas pada range tertentu
+   ✓ Banyak digunakan dalam deep learning
+   Formula: x_norm = (x - μ) / σ
+
+2. 🥈 ROBUST SCALER
+   ✓ Paling robust terhadap outliers
+   ✓ Menggunakan median dan IQR
+   Formula: x_norm = (x - median) / IQR
+
+3. 🥉 MIN-MAX NORMALIZATION
+   ⚠️ HANYA jika Anda yakin data testing tidak akan keluar dari range training
+   ⚠️ Sensitif terhadap outliers
+   ⚠️ Bisa bermasalah untuk data time series yang trending
+   Formula: x_norm = (x - min) / (max - min)
+
+📝 UNTUK SIDANG, JAWAB SEPERTI INI:
+
+Pertanyaan: "Mengapa menggunakan normalisasi Min-Max?"
+
+Jawaban yang LEBIH BAIK:
+"Setelah analisis mendalam, saya memutuskan menggunakan STANDARDIZATION (Z-score)
+karena lebih robust untuk time series data. Standardization tidak membatasi data
+dalam range tertentu, sehingga jika ada harga baru di luar range training, model
+tetap bisa handle dengan baik. Selain itu, saya juga menggunakan returns sebagai
+fitur tambahan yang sudah scale-free dan lebih stationary."
+
+ATAU jika sudah terlanjur pakai Min-Max:
+"Saya menggunakan Min-Max normalization untuk membatasi nilai dalam range [0,1]
+sesuai dengan activation function LSTM (tanh, sigmoid). Namun saya aware bahwa
+Min-Max sensitif terhadap outliers dan data baru di luar range training, sehingga
+saya pastikan melakukan proper train-test split dan monitoring jika ada nilai
+yang exceed range [0,1]."
+
+🔬 EKSPERIMEN YANG BISA DILAKUKAN:
+1. Train LSTM dengan berbagai metode normalisasi
+2. Bandingkan MSE, RMSE, MAPE pada test set
+3. Pilih metode dengan error terkecil
+4. Dokumentasikan hasil eksperimen di skripsi

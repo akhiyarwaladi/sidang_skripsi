@@ -1,0 +1,53 @@
+
+LAPORAN ANALISIS MULTIKOLINEARITAS
+Saham: BMRI (Bank Mandiri)
+Periode: 2020-01-02 s/d 2025-12-09
+Total Data Points: 1434
+
+========================================
+HASIL ANALISIS KORELASI
+========================================
+            Open      High       Low     Close    Volume
+Open    1.000000  0.999409  0.999335  0.998728 -0.006740
+High    0.999409  1.000000  0.999257  0.999454  0.004857
+Low     0.999335  0.999257  1.000000  0.999439 -0.016982
+Close   0.998728  0.999454  0.999439  1.000000 -0.006066
+Volume -0.006740  0.004857 -0.016982 -0.006066  1.000000
+
+========================================
+HASIL ANALISIS VIF
+========================================
+ Fitur          VIF
+  High 24673.891063
+   Low 19459.560524
+ Close 18223.437617
+  Open 15282.820843
+Volume     3.948581
+
+========================================
+KESIMPULAN
+========================================
+Fitur          VIF
+ High 24673.891063
+  Low 19459.560524
+Close 18223.437617
+ Open 15282.820843
+
+========================================
+REKOMENDASI UNTUK SIDANG
+========================================
+Ketika ditanya tentang multikolinearitas, jawab:
+
+"Ya Bapak/Ibu, saya sudah melakukan analisis korelasi dan VIF.
+Hasil menunjukkan bahwa fitur Open, High, Low, dan Close memiliki
+korelasi yang sangat tinggi (> 0.95) dan nilai VIF > 10.
+
+Untuk menangani ini, saya menggunakan pendekatan Feature Engineering:
+1. Menggunakan Close price sebagai fitur utama
+2. Menambahkan fitur turunan seperti Daily Return, Price Range
+3. Menambahkan Technical Indicators (RSI, MACD, Moving Average)
+4. Normalisasi data untuk meningkatkan performa LSTM
+
+Pendekatan ini mengurangi redundansi informasi sekaligus menambah
+informasi temporal yang penting untuk prediksi time series."
+
