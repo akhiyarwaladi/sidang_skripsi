@@ -12,12 +12,12 @@
 
 # RINGKASAN EKSEKUTIF
 
-| Kategori | Jumlah | Tingkat Keparahan |
-|----------|--------|-------------------|
-| Kesalahan Fatal/Konseptual | 7 | KRITIS |
-| Kesalahan Metodologis | 7 | SERIUS |
-| Kesalahan Minor/Penulisan | 7+ | PERLU PERBAIKAN |
-| **TOTAL** | **21+** | - |
+| Kategori                       | Jumlah   | Tingkat Keparahan   |
+|--------------------------------|----------|---------------------|
+| Kesalahan Fatal/Konseptual     | 7        | KRITIS              |
+| Kesalahan Metodologis          | 7        | SERIUS              |
+| Kesalahan Minor/Penulisan      | 7+       | PERLU PERBAIKAN     |
+| **TOTAL**                      | **21+**  | -                   |
 
 ---
 
@@ -25,45 +25,45 @@
 
 ## Peta Kesalahan per Halaman (Urut dari Awal)
 
-| Halaman | Jenis Kesalahan | Keterangan | Tingkat Keparahan |
-|---------|----------------|------------|-------------------|
-| **Hal. i** | Ejaan Fatal | Judul: "LIKEHOOD" → "LIKELIHOOD" | 🔴 KRITIS |
-| **Hal. iii** | NIP Tidak Jelas | NIP tambahan 19720624 199903 2 001 tidak jelas milik siapa | 🟡 MINOR |
-| **Hal. 1** | Inkonsistensi Data | Luas Kota Jambi: 205.43 km² vs 169.89 km² - tidak dijelaskan yang mana yang dipakai | 🟠 SERIUS |
-| **Hal. 2** | Referensi Hilang | Arrafi et al., 2025 dikutip tapi TIDAK ADA di daftar pustaka | 🟠 SERIUS |
-| **Hal. 2** | Referensi Hilang | Asahar Johar et al., 2020 dikutip tapi TIDAK ADA di daftar pustaka | 🟠 SERIUS |
-| **Hal. 2** | Referensi Hilang | Hardiana, 2024 dikutip tapi TIDAK ADA di daftar pustaka | 🟠 SERIUS |
-| **Hal. 3** | Penamaan Salah | "1.2 Rumusan Penelitian" → seharusnya "Rumusan **Masalah**" | 🟡 MINOR |
-| **Hal. 5** | Referensi Hilang | Government of Canada, 2025 dikutip tapi TIDAK ADA di daftar pustaka | 🟠 SERIUS |
-| **Hal. 6** | Referensi Hilang | Colleen Kaiser, 2023 dikutip tapi TIDAK ADA di daftar pustaka | 🟠 SERIUS |
-| **Hal. 6** | Referensi Hilang | Dayat, 2019 dikutip tapi TIDAK ADA di daftar pustaka | 🟠 SERIUS |
-| **Hal. 9** | Ejaan Salah | "Landsat 8 (OLI/**TRIS**)" → seharusnya "**TIRS**" (Thermal Infrared Sensor) | 🟡 MINOR |
-| **Hal. 9** | Referensi Hilang | Tech U. L., 2023 dikutip tapi TIDAK ADA di daftar pustaka | 🟠 SERIUS |
-| **Hal. 9** | Referensi Hilang | Hayati et al., 2023 dikutip tapi TIDAK ADA di daftar pustaka | 🟠 SERIUS |
-| **Hal. 10** | Referensi Hilang | NASA Earth Observatory, 2025 dikutip tapi TIDAK ADA di daftar pustaka | 🟠 SERIUS |
-| **Hal. 11** | Referensi Hilang | Departemen Kehutanan, 2005 (Tabel 2.2) dikutip tapi TIDAK ADA di daftar pustaka | 🟠 SERIUS |
-| **Hal. 11, 12** | Referensi Hilang | McFeeters, 1996 (rumus NDWI) dikutip tapi TIDAK ADA di daftar pustaka | 🟠 SERIUS |
-| **Hal. 11, 12** | Referensi Hilang | EOS Data Analytics, 2023 dikutip tapi TIDAK ADA di daftar pustaka | 🟠 SERIUS |
-| **Hal. 12** | Penomoran Salah | "2.1 Maximum Likelihood..." seharusnya "**2.7**" (setelah 2.4, 2.5, 2.6) | 🟡 MINOR |
-| **Hal. 12** | Referensi Hilang | Zha et al., 2003 dikutip tapi TIDAK ADA di daftar pustaka | 🟠 SERIUS |
-| **Hal. 12** | Referensi Hilang | Solihin & Kurniyanto, 2021 (Tabel 2.4) - Yang ada: Kurniyanto et al., 2021 | 🟠 SERIUS |
-| **Hal. 12** | **KONTRADIKSI NDBI** | Tabel 2.4: Positif = Terbangun ✓ VS Tabel 3.3 hal 30: 0.285 (POSITIF) = "Tidak Terbangun" ✗ | 🔴 KRITIS |
-| **Hal. 13** | Referensi Hilang | USGS, 2023 dikutip tapi TIDAK ADA di daftar pustaka | 🟠 SERIUS |
-| **Hal. 14** | Referensi Hilang | Irawan, 2024 dikutip tapi TIDAK ADA di daftar pustaka | 🟠 SERIUS |
-| **Hal. 20** | Info Tidak Lengkap | "3.1 Tempat **Dan Waktu** Penelitian" - hanya isi TEMPAT, tidak ada WAKTU | 🟠 SERIUS |
-| **Hal. 21** | Metodologi Ambigu | Gambar 3.1: "Perhitungan Nilai Indeks" dan "Klasifikasi MLC" terlihat paralel, tidak terintegrasi | 🔴 KRITIS |
-| **Hal. 23** | **KESALAHAN EPSG FATAL** | "EPSG:4326 = UTM Zone 48S" → SALAH TOTAL! EPSG:4326 adalah WGS84 Geographic (Lat/Long), bukan UTM. Yang benar: **EPSG:32748** | 🔴 KRITIS |
-| **Hal. 25** | Referensi Hilang | Rouse et al., 1974 (rumus NDVI) dikutip tapi TIDAK ADA di daftar pustaka | 🔴 KRITIS |
-| **Hal. 26** | **Tabel Salah Format** | Tabel 3.1: Nilai NDVI hanya nilai tunggal (0.21234415), bukan rentang. Tidak bisa dipakai untuk klasifikasi! | 🔴 KRITIS |
-| **Hal. 27** | Referensi Hilang | McFeeters, 1996 (rumus NDWI) dikutip tapi TIDAK ADA di daftar pustaka | 🔴 KRITIS |
-| **Hal. 28** | **Tabel Salah Format** | Tabel 3.2: Nilai NDWI hanya nilai tunggal, bukan rentang | 🔴 KRITIS |
-| **Hal. 29** | Referensi Hilang | Zha et al., 2003 (rumus NDBI) dikutip tapi TIDAK ADA di daftar pustaka | 🔴 KRITIS |
-| **Hal. 30** | **Tabel Salah Format** | Tabel 3.3: Nilai NDBI hanya nilai tunggal, bukan rentang | 🔴 KRITIS |
-| **Hal. 30** | **KONTRADIKSI NDBI** | Nilai 0.2850414 (POSITIF) disebut "Tidak Terbangun" - bertentangan dengan Tabel 2.4 hal. 12 | 🔴 KRITIS |
-| **Hal. 32** | Penomoran Aneh | Analisis Hasil dimulai dari nomor 3, bukan 1 (kemungkinan ada bagian terhapus) | 🟡 MINOR |
-| **Hal. 32** | Validasi Tidak Ada | Klasifikasi Berbasis Indeks (3.6.7) TIDAK ADA validasi akurasi, padahal MLC ada | 🟠 SERIUS |
-| **Hal. 33-34** | **GROUND TRUTH FATAL** | Training samples hanya dari interpretasi visual citra yang SAMA → Circular reasoning! Tidak ada ground truth independen | 🔴 BLOCKER |
-| **Hal. 34** | Pembagian Data Tidak Jelas | Tidak dijelaskan proporsi training vs testing (70:30? 80:20?) | 🟠 SERIUS |
+| Halaman         | Jenis Kesalahan             | Keterangan                                                                                                                          | Tingkat Keparahan |
+|-----------------|-----------------------------|------------------------------------------------------------------------------------------------------------------------------------|-------------------|
+| **Hal. i**      | Ejaan Fatal                 | Judul: "LIKEHOOD" → "LIKELIHOOD"                                                                                                   | 🔴 KRITIS          |
+| **Hal. iii**    | NIP Tidak Jelas             | NIP tambahan 19720624 199903 2 001 tidak jelas milik siapa                                                                        | 🟡 MINOR           |
+| **Hal. 1**      | Inkonsistensi Data          | Luas Kota Jambi: 205.43 km² vs 169.89 km² - tidak dijelaskan yang mana yang dipakai                                               | 🟠 SERIUS          |
+| **Hal. 2**      | Referensi Hilang            | Arrafi et al., 2025 dikutip tapi TIDAK ADA di daftar pustaka                                                                       | 🟠 SERIUS          |
+| **Hal. 2**      | Referensi Hilang            | Asahar Johar et al., 2020 dikutip tapi TIDAK ADA di daftar pustaka                                                                 | 🟠 SERIUS          |
+| **Hal. 2**      | Referensi Hilang            | Hardiana, 2024 dikutip tapi TIDAK ADA di daftar pustaka                                                                            | 🟠 SERIUS          |
+| **Hal. 3**      | Penamaan Salah              | "1.2 Rumusan Penelitian" → seharusnya "Rumusan **Masalah**"                                                                       | 🟡 MINOR           |
+| **Hal. 5**      | Referensi Hilang            | Government of Canada, 2025 dikutip tapi TIDAK ADA di daftar pustaka                                                                | 🟠 SERIUS          |
+| **Hal. 6**      | Referensi Hilang            | Colleen Kaiser, 2023 dikutip tapi TIDAK ADA di daftar pustaka                                                                      | 🟠 SERIUS          |
+| **Hal. 6**      | Referensi Hilang            | Dayat, 2019 dikutip tapi TIDAK ADA di daftar pustaka                                                                               | 🟠 SERIUS          |
+| **Hal. 9**      | Ejaan Salah                 | "Landsat 8 (OLI/**TRIS**)" → seharusnya "**TIRS**" (Thermal Infrared Sensor)                                                      | 🟡 MINOR           |
+| **Hal. 9**      | Referensi Hilang            | Tech U. L., 2023 dikutip tapi TIDAK ADA di daftar pustaka                                                                          | 🟠 SERIUS          |
+| **Hal. 9**      | Referensi Hilang            | Hayati et al., 2023 dikutip tapi TIDAK ADA di daftar pustaka                                                                       | 🟠 SERIUS          |
+| **Hal. 10**     | Referensi Hilang            | NASA Earth Observatory, 2025 dikutip tapi TIDAK ADA di daftar pustaka                                                              | 🟠 SERIUS          |
+| **Hal. 11**     | Referensi Hilang            | Departemen Kehutanan, 2005 (Tabel 2.2) dikutip tapi TIDAK ADA di daftar pustaka                                                   | 🟠 SERIUS          |
+| **Hal. 11, 12** | Referensi Hilang            | McFeeters, 1996 (rumus NDWI) dikutip tapi TIDAK ADA di daftar pustaka                                                              | 🟠 SERIUS          |
+| **Hal. 11, 12** | Referensi Hilang            | EOS Data Analytics, 2023 dikutip tapi TIDAK ADA di daftar pustaka                                                                  | 🟠 SERIUS          |
+| **Hal. 12**     | Penomoran Salah             | "2.1 Maximum Likelihood..." seharusnya "**2.7**" (setelah 2.4, 2.5, 2.6)                                                          | 🟡 MINOR           |
+| **Hal. 12**     | Referensi Hilang            | Zha et al., 2003 dikutip tapi TIDAK ADA di daftar pustaka                                                                          | 🟠 SERIUS          |
+| **Hal. 12**     | Referensi Hilang            | Solihin & Kurniyanto, 2021 (Tabel 2.4) - Yang ada: Kurniyanto et al., 2021                                                        | 🟠 SERIUS          |
+| **Hal. 12**     | **KONTRADIKSI NDBI**        | Tabel 2.4: Positif = Terbangun ✓ VS Tabel 3.3 hal 30: 0.285 (POSITIF) = "Tidak Terbangun" ✗                                       | 🔴 KRITIS          |
+| **Hal. 13**     | Referensi Hilang            | USGS, 2023 dikutip tapi TIDAK ADA di daftar pustaka                                                                                | 🟠 SERIUS          |
+| **Hal. 14**     | Referensi Hilang            | Irawan, 2024 dikutip tapi TIDAK ADA di daftar pustaka                                                                              | 🟠 SERIUS          |
+| **Hal. 20**     | Info Tidak Lengkap          | "3.1 Tempat **Dan Waktu** Penelitian" - hanya isi TEMPAT, tidak ada WAKTU                                                         | 🟠 SERIUS          |
+| **Hal. 21**     | Metodologi Ambigu           | Gambar 3.1: "Perhitungan Nilai Indeks" dan "Klasifikasi MLC" terlihat paralel, tidak terintegrasi                                 | 🔴 KRITIS          |
+| **Hal. 23**     | **KESALAHAN EPSG FATAL**    | "EPSG:4326 = UTM Zone 48S" → SALAH TOTAL! EPSG:4326 adalah WGS84 Geographic (Lat/Long), bukan UTM. Yang benar: **EPSG:32748**    | 🔴 KRITIS          |
+| **Hal. 25**     | Referensi Hilang            | Rouse et al., 1974 (rumus NDVI) dikutip tapi TIDAK ADA di daftar pustaka                                                          | 🔴 KRITIS          |
+| **Hal. 26**     | **Tabel Salah Format**      | Tabel 3.1: Nilai NDVI hanya nilai tunggal (0.21234415), bukan rentang. Tidak bisa dipakai untuk klasifikasi!                      | 🔴 KRITIS          |
+| **Hal. 27**     | Referensi Hilang            | McFeeters, 1996 (rumus NDWI) dikutip tapi TIDAK ADA di daftar pustaka                                                              | 🔴 KRITIS          |
+| **Hal. 28**     | **Tabel Salah Format**      | Tabel 3.2: Nilai NDWI hanya nilai tunggal, bukan rentang                                                                           | 🔴 KRITIS          |
+| **Hal. 29**     | Referensi Hilang            | Zha et al., 2003 (rumus NDBI) dikutip tapi TIDAK ADA di daftar pustaka                                                             | 🔴 KRITIS          |
+| **Hal. 30**     | **Tabel Salah Format**      | Tabel 3.3: Nilai NDBI hanya nilai tunggal, bukan rentang                                                                           | 🔴 KRITIS          |
+| **Hal. 30**     | **KONTRADIKSI NDBI**        | Nilai 0.2850414 (POSITIF) disebut "Tidak Terbangun" - bertentangan dengan Tabel 2.4 hal. 12                                       | 🔴 KRITIS          |
+| **Hal. 32**     | Penomoran Aneh              | Analisis Hasil dimulai dari nomor 3, bukan 1 (kemungkinan ada bagian terhapus)                                                    | 🟡 MINOR           |
+| **Hal. 32**     | Validasi Tidak Ada          | Klasifikasi Berbasis Indeks (3.6.7) TIDAK ADA validasi akurasi, padahal MLC ada                                                   | 🟠 SERIUS          |
+| **Hal. 33-34**  | **GROUND TRUTH FATAL**      | Training samples hanya dari interpretasi visual citra yang SAMA → Circular reasoning! Tidak ada ground truth independen           | 🔴 BLOCKER         |
+| **Hal. 34**     | Pembagian Data Tidak Jelas  | Tidak dijelaskan proporsi training vs testing (70:30? 80:20?)                                                                      | 🟠 SERIUS          |
 
 **CATATAN PENTING UNTUK PENGUJI**:
 - 🔴 KRITIS/BLOCKER = 7 kesalahan → Harus diperbaiki atau penelitian tidak valid
@@ -91,11 +91,11 @@
 - Kota Jambi terletak di koordinat sekitar 1.6°S, 103.6°E
 
 **Kode EPSG yang benar untuk Kota Jambi**:
-| Sistem Koordinat | Kode EPSG | Keterangan |
-|------------------|-----------|------------|
-| WGS 84 (Geographic) | EPSG:4326 | Lat/Long dalam derajat |
-| UTM Zone 48N | EPSG:32648 | Untuk wilayah utara ekuator |
-| UTM Zone 48S | EPSG:32748 | Untuk wilayah selatan ekuator |
+| Sistem Koordinat       | Kode EPSG  | Keterangan                      |
+|------------------------|------------|---------------------------------|
+| WGS 84 (Geographic)    | EPSG:4326  | Lat/Long dalam derajat          |
+| UTM Zone 48N           | EPSG:32648 | Untuk wilayah utara ekuator     |
+| UTM Zone 48S           | EPSG:32748 | Untuk wilayah selatan ekuator   |
 
 **DAMPAK**: Perhitungan luas area dalam satuan meter/kilometer akan menghasilkan nilai yang SALAH jika menggunakan EPSG:4326 yang bersatuan derajat.
 
@@ -107,17 +107,17 @@
 
 **Di Tabel 2.4 Tinjauan Pustaka (hal. 12)**:
 
-| No | Klasifikasi | Nilai NDBI |
-|----|-------------|------------|
-| 1 | Tidak Terbangun | -1 hingga 0 |
-| 2 | Terbangun | 0 hingga +1 |
+| No | Klasifikasi     | Nilai NDBI      |
+|----|-----------------|-----------------|
+| 1  | Tidak Terbangun | -1 hingga 0     |
+| 2  | Terbangun       | 0 hingga +1     |
 
 **Di Tabel 3.3 Hasil Perhitungan (hal. 30)**:
 
-| No | Kelas Vegetasi | Nilai NDBI 2015 | Nilai NDBI 2025 |
-|----|----------------|-----------------|-----------------|
-| 1 | **Tidak Terbangun** | **0.2850414** | -0.6028725 |
-| 2 | Terbangun | 0.2680664 | 0.31556 |
+| No | Kelas Vegetasi      | Nilai NDBI 2015 | Nilai NDBI 2025 |
+|----|---------------------|-----------------|-----------------|
+| 1  | **Tidak Terbangun** | **0.2850414**   | -0.6028725      |
+| 2  | Terbangun           | 0.2680664       | 0.31556         |
 
 **KONTRADIKSI**:
 - Menurut Tabel 2.4: Nilai POSITIF (>0) = **Terbangun**
@@ -237,11 +237,11 @@ Citra Landsat 8 → Interpretasi Visual "ini vegetasi" → Training Sample
 
 **Contoh di Tabel 3.1 Klasifikasi Hasil NDVI**:
 
-| No | Kelas | Nilai NDVI 2015 | Nilai NDVI 2025 |
-|----|-------|-----------------|-----------------|
-| 1 | Vegetasi Rendah | -0.1106798 | -0.1892031 |
-| 2 | Vegetasi Sedang | 0.21234415 | 0.21670945 |
-| 3 | Vegetasi Tinggi | 0.5353681 | 0.622622 |
+| No | Kelas           | Nilai NDVI 2015 | Nilai NDVI 2025 |
+|----|-----------------|-----------------|-----------------|
+| 1  | Vegetasi Rendah | -0.1106798      | -0.1892031      |
+| 2  | Vegetasi Sedang | 0.21234415      | 0.21670945      |
+| 3  | Vegetasi Tinggi | 0.5353681       | 0.622622        |
 
 **MASALAH**:
 - Klasifikasi membutuhkan **RENTANG nilai**, bukan nilai tunggal
@@ -280,10 +280,10 @@ Citra Landsat 8 → Interpretasi Visual "ini vegetasi" → Training Sample
 
 **Perbandingan**:
 
-| Metode | Validasi Akurasi |
-|--------|------------------|
-| MLC (Bagian 3.7e) | ✓ Confusion matrix, Overall accuracy, Kappa |
-| Klasifikasi Berbasis Indeks (Bagian 3.6.7) | ✗ TIDAK ADA penjelasan validasi |
+| Metode                                      | Validasi Akurasi                               |
+|---------------------------------------------|------------------------------------------------|
+| MLC (Bagian 3.7e)                           | ✓ Confusion matrix, Overall accuracy, Kappa    |
+| Klasifikasi Berbasis Indeks (Bagian 3.6.7) | ✗ TIDAK ADA penjelasan validasi                |
 
 **PERTANYAAN**: Bagaimana membuktikan bahwa klasifikasi berbasis indeks akurat?
 
@@ -359,26 +359,26 @@ Citra Landsat 8 → Interpretasi Visual "ini vegetasi" → Training Sample
 
 ## C.1. Referensi Dikutip Tapi TIDAK ADA di Daftar Pustaka
 
-| No | Referensi yang Dikutip | Lokasi Kutipan | Status di Daftar Pustaka |
-|----|------------------------|----------------|--------------------------|
-| 1 | Rouse et al., 1974 | Hal. 25 (rumus NDVI) | ❌ TIDAK ADA |
-| 2 | McFeeters, 1996 | Hal. 11, 27 (rumus NDWI) | ❌ TIDAK ADA |
-| 3 | Zha et al., 2003 | Hal. 12, 29 (rumus NDBI) | ❌ TIDAK ADA |
-| 4 | NASA Earth Observatory, 2025 | Hal. 10, 11 | ❌ TIDAK ADA |
-| 5 | USGS, 2023 | Hal. 13 | ❌ TIDAK ADA |
-| 6 | USGS, 2024 | Hal. 8 | ❌ TIDAK ADA |
-| 7 | Government of Canada, 2025 | Hal. 5 | ❌ TIDAK ADA |
-| 8 | EOS Data Analytics, 2023 | Hal. 11, 12 | ❌ TIDAK ADA |
-| 9 | Departemen Kehutanan, 2005 | Hal. 11 (Tabel 2.2) | ❌ TIDAK ADA |
-| 10 | Tech U. L., 2023 | Hal. 9 | ❌ TIDAK ADA |
-| 11 | Solihin & Kurniyanto, 2021 | Hal. 12 (Tabel 2.4) | ❌ TIDAK ADA (yang ada: Kurniyanto et al., 2021) |
-| 12 | Colleen Kaiser, 2023 | Hal. 6 | ❌ TIDAK ADA |
-| 13 | Dayat, 2019 | Hal. 6 (Gambar 2.2) | ❌ TIDAK ADA |
-| 14 | Asahar Johar et al., 2020 | Hal. 2 | ❌ TIDAK ADA |
-| 15 | Hardiana, 2024 | Hal. 2 | ❌ TIDAK ADA |
-| 16 | Irawan, 2024 | Hal. 14 | ❌ TIDAK ADA |
-| 17 | Arrafi et al., 2025 | Hal. 2 | ❌ TIDAK ADA |
-| 18 | Hayati et al., 2023 | Hal. 9 | ❌ TIDAK ADA |
+| No | Referensi yang Dikutip       | Lokasi Kutipan           | Status di Daftar Pustaka                       |
+|----|------------------------------|--------------------------|------------------------------------------------|
+| 1  | Rouse et al., 1974           | Hal. 25 (rumus NDVI)     | ❌ TIDAK ADA                                    |
+| 2  | McFeeters, 1996              | Hal. 11, 27 (rumus NDWI) | ❌ TIDAK ADA                                    |
+| 3  | Zha et al., 2003             | Hal. 12, 29 (rumus NDBI) | ❌ TIDAK ADA                                    |
+| 4  | NASA Earth Observatory, 2025 | Hal. 10, 11              | ❌ TIDAK ADA                                    |
+| 5  | USGS, 2023                   | Hal. 13                  | ❌ TIDAK ADA                                    |
+| 6  | USGS, 2024                   | Hal. 8                   | ❌ TIDAK ADA                                    |
+| 7  | Government of Canada, 2025   | Hal. 5                   | ❌ TIDAK ADA                                    |
+| 8  | EOS Data Analytics, 2023     | Hal. 11, 12              | ❌ TIDAK ADA                                    |
+| 9  | Departemen Kehutanan, 2005   | Hal. 11 (Tabel 2.2)      | ❌ TIDAK ADA                                    |
+| 10 | Tech U. L., 2023             | Hal. 9                   | ❌ TIDAK ADA                                    |
+| 11 | Solihin & Kurniyanto, 2021   | Hal. 12 (Tabel 2.4)      | ❌ TIDAK ADA (yang ada: Kurniyanto et al., 2021) |
+| 12 | Colleen Kaiser, 2023         | Hal. 6                   | ❌ TIDAK ADA                                    |
+| 13 | Dayat, 2019                  | Hal. 6 (Gambar 2.2)      | ❌ TIDAK ADA                                    |
+| 14 | Asahar Johar et al., 2020    | Hal. 2                   | ❌ TIDAK ADA                                    |
+| 15 | Hardiana, 2024               | Hal. 2                   | ❌ TIDAK ADA                                    |
+| 16 | Irawan, 2024                 | Hal. 14                  | ❌ TIDAK ADA                                    |
+| 17 | Arrafi et al., 2025          | Hal. 2                   | ❌ TIDAK ADA                                    |
+| 18 | Hayati et al., 2023          | Hal. 9                   | ❌ TIDAK ADA                                    |
 
 **TOTAL: 18 referensi dikutip tapi tidak ada di daftar pustaka**
 
@@ -398,13 +398,13 @@ Citra Landsat 8 → Interpretasi Visual "ini vegetasi" → Training Sample
 
 ## D.2. Inkonsistensi Penulisan Istilah
 
-| Penulisan 1 | Penulisan 2 | Halaman |
-|-------------|-------------|---------|
-| Penginderaan | Pengindraan | 5, daftar isi |
-| Index | Indeks | Judul, isi |
-| spectral | spektral | Berbagai |
-| Likehood | Likelihood | Seluruh dokumen |
-| infrared | Infrared | Berbagai |
+| Penulisan 1  | Penulisan 2 | Halaman          |
+|--------------|-------------|------------------|
+| Penginderaan | Pengindraan | 5, daftar isi    |
+| Index        | Indeks      | Judul, isi       |
+| spectral     | spektral    | Berbagai         |
+| Likehood     | Likelihood  | Seluruh dokumen  |
+| infrared     | Infrared    | Berbagai         |
 
 ---
 
@@ -569,13 +569,13 @@ Berdasarkan analisis komprehensif, proposal ini **BELUM LAYAK** untuk dilanjutka
 
 ### Penilaian Per Aspek:
 
-| Aspek | Nilai | Keterangan |
-|-------|-------|------------|
-| **Originalitas** | ⭐⭐☆☆☆ | Penelitian serupa sudah dilakukan Aulia et al. (2023) di Kota Jambi. Tidak ada nilai tambah yang jelas. |
-| **Metodologi** | ⭐☆☆☆☆ | Fatal: Tidak ada ground truth. Training samples tidak valid. |
-| **Penulisan** | ⭐⭐☆☆☆ | Banyak kesalahan ejaan (Likehood), referensi tidak lengkap, penomoran salah. |
-| **Kelengkapan** | ⭐⭐⭐☆☆ | Struktur proposal sudah lengkap, tapi banyak bagian yang ambigu atau tidak dijelaskan. |
-| **Kelayakan Teknis** | ⭐☆☆☆☆ | Kesalahan sistem koordinat, kontradiksi tabel, metodologi tidak dapat dijalankan. |
+| Aspek                | Nilai     | Keterangan                                                                                              |
+|----------------------|-----------|--------------------------------------------------------------------------------------------------------|
+| **Originalitas**     | ⭐⭐☆☆☆ | Penelitian serupa sudah dilakukan Aulia et al. (2023) di Kota Jambi. Tidak ada nilai tambah yang jelas. |
+| **Metodologi**       | ⭐☆☆☆☆ | Fatal: Tidak ada ground truth. Training samples tidak valid.                                           |
+| **Penulisan**        | ⭐⭐☆☆☆ | Banyak kesalahan ejaan (Likehood), referensi tidak lengkap, penomoran salah.                            |
+| **Kelengkapan**      | ⭐⭐⭐☆☆ | Struktur proposal sudah lengkap, tapi banyak bagian yang ambigu atau tidak dijelaskan.                  |
+| **Kelayakan Teknis** | ⭐☆☆☆☆ | Kesalahan sistem koordinat, kontradiksi tabel, metodologi tidak dapat dijalankan.                       |
 
 **REKOMENDASI AKHIR**:
 - ❌ **DITOLAK** - Jika tidak ada perbaikan
@@ -706,13 +706,13 @@ Berdasarkan analisis komprehensif, proposal ini **BELUM LAYAK** untuk dilanjutka
 
 ## I.2. Area yang Wajib Ditanyakan
 
-| Area | Pertanyaan Kunci | Ekspektasi Jawaban |
-|------|------------------|-------------------|
-| **Ground Truth** | "Dari mana ground truth Anda?" | Mahasiswa HARUS mengakui masalah ini atau usulkan solusi konkret |
-| **EPSG** | "Apa beda EPSG:4326 dan EPSG:32748?" | Harus bisa jawab dengan benar atau akui kesalahan |
-| **Kontradiksi NDBI** | "Mengapa Tabel 2.4 dan 3.3 bertentangan?" | Harus identifikasi kontradiksi dan jelaskan mana yang benar |
-| **Referensi** | "Anda kutip Rouse et al. 1974, ada di daftar pustaka?" | Mahasiswa akui kelalaian dan berkomitmen lengkapi |
-| **Kontribusi** | "Apa bedanya dengan Aulia et al. 2023?" | Harus bisa jelaskan value added penelitian |
+| Area                 | Pertanyaan Kunci                                  | Ekspektasi Jawaban                                             |
+|----------------------|---------------------------------------------------|----------------------------------------------------------------|
+| **Ground Truth**     | "Dari mana ground truth Anda?"                    | Mahasiswa HARUS mengakui masalah ini atau usulkan solusi konkret |
+| **EPSG**             | "Apa beda EPSG:4326 dan EPSG:32748?"              | Harus bisa jawab dengan benar atau akui kesalahan              |
+| **Kontradiksi NDBI** | "Mengapa Tabel 2.4 dan 3.3 bertentangan?"         | Harus identifikasi kontradiksi dan jelaskan mana yang benar    |
+| **Referensi**        | "Anda kutip Rouse et al. 1974, ada di daftar pustaka?" | Mahasiswa akui kelalaian dan berkomitmen lengkapi         |
+| **Kontribusi**       | "Apa bedanya dengan Aulia et al. 2023?"           | Harus bisa jelaskan value added penelitian                     |
 
 ## I.3. Red Flags yang Harus Diwaspadai
 
@@ -1027,11 +1027,11 @@ Untuk sidang revisi atau sidang skripsi:
 
 Dari penelitian terdahulu (Tabel 2.5), ada gap yang bisa diisi:
 
-| Penelitian | Metode | Gap |
-|------------|--------|-----|
-| Aulia et al. (2023) | NDVI only | Tidak identifikasi badan air dan area terbangun secara eksplisit |
-| Agus et al. (2024) | NDVI + MLC | Lokasi berbeda (Samarinda), belum ada untuk Jambi |
-| Jothimani et al. (2021) | NDVI+NDWI+NDBI+LST | Fokus ke LST (suhu), bukan klasifikasi tutupan lahan |
+| Penelitian              | Metode              | Gap                                                                  |
+|-------------------------|---------------------|----------------------------------------------------------------------|
+| Aulia et al. (2023)     | NDVI only           | Tidak identifikasi badan air dan area terbangun secara eksplisit     |
+| Agus et al. (2024)      | NDVI + MLC          | Lokasi berbeda (Samarinda), belum ada untuk Jambi                    |
+| Jothimani et al. (2021) | NDVI+NDWI+NDBI+LST  | Fokus ke LST (suhu), bukan klasifikasi tutupan lahan                 |
 
 **Kontribusi Potensial Penelitian Ini**:
 1. ✅ Pertama kali menerapkan kombinasi 3 indeks + MLC untuk Kota Jambi
@@ -1048,14 +1048,14 @@ Dari penelitian terdahulu (Tabel 2.5), ada gap yang bisa diisi:
 
 ### Tabel Komparasi Dataset Satelit untuk Klasifikasi Tutupan Lahan
 
-| Dataset | Resolusi Spasial | Resolusi Temporal | Band Spektral | Ketersediaan | Biaya | Kelebihan | Kekurangan |
-|---------|------------------|-------------------|---------------|--------------|-------|-----------|------------|
-| **Landsat 8 OLI/TIRS** | **30m** (multispektral) <br> 15m (pankromatik) <br> 100m (thermal) | **16 hari** | **11 band** (Coastal-SWIR-Thermal) | 2013-sekarang | **GRATIS** | ✅ Gratis <br> ✅ Arsip historis panjang (sejak 1972 untuk Landsat series) <br> ✅ Konsistensi data <br> ✅ Dokumentasi lengkap | ❌ Resolusi spasial sedang (30m) <br> ❌ Revisit 16 hari (lambat) <br> ❌ Sering terhalang awan di tropis |
-| **Sentinel-2 (ESA)** | **10m** (RGB, NIR) <br> 20m (Red Edge, SWIR) <br> 60m (Coastal, Cirrus) | **5 hari** (2 satelit) | **13 band** (termasuk Red Edge untuk vegetasi) | 2015-sekarang | **GRATIS** | ✅ Gratis <br> ✅ Resolusi lebih tinggi (10m) <br> ✅ Revisit lebih cepat (5 hari) <br> ✅ Band Red Edge untuk analisis vegetasi detail | ❌ Arsip historis lebih pendek (sejak 2015) <br> ❌ Tidak ada band thermal <br> ❌ Data lebih besar (storage) |
-| **SPOT 6/7** | **1.5m** (pankromatik) <br> 6m (multispektral) | On-demand (tasking) | 5 band | 2012-sekarang <br> ⚠️ SPOT 7 failed March 2023 | **KOMERSIAL** (harga bervariasi, contact Airbus) | ✅ Resolusi sangat tinggi <br> ✅ Cocok untuk urban mapping detail | ❌ Mahal <br> ❌ Tidak ada arsip gratis <br> ❌ Coverage terbatas <br> ❌ SPOT 7 tidak operasional |
-| **Planet (SkySat, Dove)** | **0.5-3m** | **Harian** | 4-8 band | 2016-sekarang | **KOMERSIAL** (atau gratis untuk penelitian tertentu) | ✅ Resolusi tinggi <br> ✅ Temporal sangat tinggi (daily) | ❌ Mahal untuk area luas <br> ❌ Variasi kualitas radiometrik <br> ❌ Kompleksitas preprocessing |
-| **MODIS (Terra/Aqua)** | **250m-1km** (sensor bands) <br> **500m** (land cover product MCD12Q1) | **1-2 hari** | 36 band | 2000-sekarang | **GRATIS** | ✅ Gratis <br> ✅ Revisit sangat cepat <br> ✅ Cocok untuk monitoring regional | ❌ Resolusi rendah (500m untuk land cover) <br> ❌ Tidak cocok untuk area kecil seperti Kota Jambi |
-| **Google Earth (Basemap)** | **0.5-15m** (varies) | Tidak konsisten | RGB (visual) | Varies by location | **GRATIS** (viewing only) | ✅ Resolusi tinggi <br> ✅ Mudah diakses | ❌ Tanggal akuisisi tidak konsisten <br> ❌ Tidak ada band spektral (hanya RGB) <br> ❌ Tidak untuk analisis kuantitatif |
+| Dataset                     | Resolusi Spasial                                                          | Resolusi Temporal      | Band Spektral                                      | Ketersediaan                              | Biaya                                           | Kelebihan                                                                                                                  | Kekurangan                                                                                                       |
+|-----------------------------|---------------------------------------------------------------------------|------------------------|----------------------------------------------------|-------------------------------------------|-------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
+| **Landsat 8 OLI/TIRS**      | **30m** (multispektral) <br> 15m (pankromatik) <br> 100m (thermal)        | **16 hari**            | **11 band** (Coastal-SWIR-Thermal)                 | 2013-sekarang                             | **GRATIS**                                      | ✅ Gratis <br> ✅ Arsip historis panjang (sejak 1972 untuk Landsat series) <br> ✅ Konsistensi data <br> ✅ Dokumentasi lengkap | ❌ Resolusi spasial sedang (30m) <br> ❌ Revisit 16 hari (lambat) <br> ❌ Sering terhalang awan di tropis          |
+| **Sentinel-2 (ESA)**        | **10m** (RGB, NIR) <br> 20m (Red Edge, SWIR) <br> 60m (Coastal, Cirrus)  | **5 hari** (2 satelit) | **13 band** (termasuk Red Edge untuk vegetasi)     | 2015-sekarang                             | **GRATIS**                                      | ✅ Gratis <br> ✅ Resolusi lebih tinggi (10m) <br> ✅ Revisit lebih cepat (5 hari) <br> ✅ Band Red Edge untuk analisis vegetasi detail | ❌ Arsip historis lebih pendek (sejak 2015) <br> ❌ Tidak ada band thermal <br> ❌ Data lebih besar (storage)      |
+| **SPOT 6/7**                | **1.5m** (pankromatik) <br> 6m (multispektral)                            | On-demand (tasking)    | 5 band                                             | 2012-sekarang <br> ⚠️ SPOT 7 failed March 2023 | **KOMERSIAL** (harga bervariasi, contact Airbus) | ✅ Resolusi sangat tinggi <br> ✅ Cocok untuk urban mapping detail                                                           | ❌ Mahal <br> ❌ Tidak ada arsip gratis <br> ❌ Coverage terbatas <br> ❌ SPOT 7 tidak operasional                  |
+| **Planet (SkySat, Dove)**   | **0.5-3m**                                                                | **Harian**             | 4-8 band                                           | 2016-sekarang                             | **KOMERSIAL** (atau gratis untuk penelitian tertentu) | ✅ Resolusi tinggi <br> ✅ Temporal sangat tinggi (daily)                                                                    | ❌ Mahal untuk area luas <br> ❌ Variasi kualitas radiometrik <br> ❌ Kompleksitas preprocessing                   |
+| **MODIS (Terra/Aqua)**      | **250m-1km** (sensor bands) <br> **500m** (land cover product MCD12Q1)   | **1-2 hari**           | 36 band                                            | 2000-sekarang                             | **GRATIS**                                      | ✅ Gratis <br> ✅ Revisit sangat cepat <br> ✅ Cocok untuk monitoring regional                                                | ❌ Resolusi rendah (500m untuk land cover) <br> ❌ Tidak cocok untuk area kecil seperti Kota Jambi                 |
+| **Google Earth (Basemap)**  | **0.5-15m** (varies)                                                      | Tidak konsisten        | RGB (visual)                                       | Varies by location                        | **GRATIS** (viewing only)                       | ✅ Resolusi tinggi <br> ✅ Mudah diakses                                                                                    | ❌ Tanggal akuisisi tidak konsisten <br> ❌ Tidak ada band spektral (hanya RGB) <br> ❌ Tidak untuk analisis kuantitatif |
 
 ---
 
@@ -1079,15 +1079,15 @@ Dari penelitian terdahulu (Tabel 2.5), ada gap yang bisa diisi:
 
 ### Timeline dan Coverage Landsat 8
 
-| Aspek | Detail |
-|-------|--------|
-| **Launch Date** | 11 Februari 2013 |
-| **Operational Status** | Aktif (2013 - sekarang, >11 tahun) |
-| **Path/Row untuk Kota Jambi** | **Path 126, Row 62** (Bengkulu & Jambi provinces, Sumatra) |
-| **Rentang Waktu Tersedia** | 2013 - Present |
-| **Revisit Time** | 16 hari |
-| **Jumlah Scene per Tahun** | ~23 scene (365/16) |
-| **Cloud-Free Scene** | Sangat terbatas di Indonesia (iklim tropis) |
+| Aspek                         | Detail                                                      |
+|-------------------------------|-------------------------------------------------------------|
+| **Launch Date**               | 11 Februari 2013                                            |
+| **Operational Status**        | Aktif (2013 - sekarang, >11 tahun)                          |
+| **Path/Row untuk Kota Jambi** | **Path 126, Row 62** (Bengkulu & Jambi provinces, Sumatra)  |
+| **Rentang Waktu Tersedia**    | 2013 - Present                                              |
+| **Revisit Time**              | 16 hari                                                     |
+| **Jumlah Scene per Tahun**    | ~23 scene (365/16)                                          |
+| **Cloud-Free Scene**          | Sangat terbatas di Indonesia (iklim tropis)                 |
 
 ---
 
@@ -1095,12 +1095,12 @@ Dari penelitian terdahulu (Tabel 2.5), ada gap yang bisa diisi:
 
 **Tabel Estimasi Ketersediaan Scene Cloud-Free**:
 
-| Musim | Bulan | Estimasi Cloud Cover | Kemungkinan Cloud < 10% | Catatan |
-|-------|-------|----------------------|-------------------------|---------|
-| **Kemarau** | **Juni - September** | **20-40%** | **TINGGI** ✅ | **WAKTU TERBAIK** untuk akuisisi data |
-| Peralihan | Oktober - November | 40-60% | Sedang | Mulai memasuki musim hujan |
-| **Musim Hujan** | Desember - Maret | **60-90%** | **SANGAT RENDAH** ❌ | Hampir mustahil mendapat scene cloud-free |
-| Peralihan | April - Mei | 50-70% | Rendah | Akhir musim hujan |
+| Musim           | Bulan                | Estimasi Cloud Cover | Kemungkinan Cloud < 10% | Catatan                                    |
+|-----------------|----------------------|----------------------|-------------------------|--------------------------------------------|
+| **Kemarau**     | **Juni - September** | **20-40%**           | **TINGGI** ✅            | **WAKTU TERBAIK** untuk akuisisi data      |
+| Peralihan       | Oktober - November   | 40-60%               | Sedang                  | Mulai memasuki musim hujan                 |
+| **Musim Hujan** | Desember - Maret     | **60-90%**           | **SANGAT RENDAH** ❌     | Hampir mustahil mendapat scene cloud-free  |
+| Peralihan       | April - Mei          | 50-70%               | Rendah                  | Akhir musim hujan                          |
 
 **MASALAH DALAM PROPOSAL**:
 
@@ -1149,17 +1149,17 @@ Di halaman 21-22, mahasiswa menulis:
 
 #### **A. Google Dynamic World (RECOMMENDED ✅)**
 
-| Aspek | Detail |
-|-------|--------|
-| **Provider** | Google & World Resources Institute |
-| **Resolution** | **10m** (dari Sentinel-2) |
-| **Temporal Coverage** | **2015 - Present** (Near Real-Time) |
-| **Update Frequency** | Setiap 2-5 hari |
-| **Jumlah Kelas** | **9 kelas**: Water, Trees, Grass, Flooded vegetation, Crops, Shrub/scrub, Built area, Bare ground, Snow/ice |
-| **Akurasi Global** | Overall Accuracy: **~73-74%** (validated in Nature Scientific Data 2022) |
-| **Format** | GeoTIFF (Google Earth Engine) |
-| **Akses** | **GRATIS** via Google Earth Engine |
-| **URL** | https://developers.google.com/earth-engine/datasets/catalog/GOOGLE_DYNAMICWORLD_V1 |
+| Aspek                 | Detail                                                                                                                        |
+|-----------------------|-------------------------------------------------------------------------------------------------------------------------------|
+| **Provider**          | Google & World Resources Institute                                                                                            |
+| **Resolution**        | **10m** (dari Sentinel-2)                                                                                                     |
+| **Temporal Coverage** | **2015 - Present** (Near Real-Time)                                                                                           |
+| **Update Frequency**  | Setiap 2-5 hari                                                                                                               |
+| **Jumlah Kelas**      | **9 kelas**: Water, Trees, Grass, Flooded vegetation, Crops, Shrub/scrub, Built area, Bare ground, Snow/ice                  |
+| **Akurasi Global**    | Overall Accuracy: **~73-74%** (validated in Nature Scientific Data 2022)                                                      |
+| **Format**            | GeoTIFF (Google Earth Engine)                                                                                                 |
+| **Akses**             | **GRATIS** via Google Earth Engine                                                                                            |
+| **URL**               | https://developers.google.com/earth-engine/datasets/catalog/GOOGLE_DYNAMICWORLD_V1                                            |
 
 **MENGAPA INI COCOK UNTUK VALIDASI**:
 - ✅ Resolusi 10m (lebih detail dari Landsat 30m)
@@ -1183,16 +1183,16 @@ Export.image.toDrive({image: dynamicWorld.mode(), ...});
 
 #### **B. ESA WorldCover 10m**
 
-| Aspek | Detail |
-|-------|--------|
-| **Provider** | European Space Agency (ESA) |
-| **Resolution** | **10m** |
-| **Temporal Coverage** | **2020, 2021** (snapshot tahunan) |
-| **Jumlah Kelas** | **11 kelas**: Tree cover, Shrubland, Grassland, Cropland, Built-up, Bare/sparse vegetation, Snow/ice, Permanent water, Herbaceous wetland, Mangroves, Moss/lichen |
-| **Akurasi Global** | Overall Accuracy: **74.4%** |
-| **Format** | GeoTIFF |
-| **Akses** | **GRATIS** |
-| **URL** | https://worldcover2020.esa.int/ |
+| Aspek                 | Detail                                                                                                                                                                                   |
+|-----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Provider**          | European Space Agency (ESA)                                                                                                                                                              |
+| **Resolution**        | **10m**                                                                                                                                                                                  |
+| **Temporal Coverage** | **2020, 2021** (snapshot tahunan)                                                                                                                                                        |
+| **Jumlah Kelas**      | **11 kelas**: Tree cover, Shrubland, Grassland, Cropland, Built-up, Bare/sparse vegetation, Snow/ice, Permanent water, Herbaceous wetland, Mangroves, Moss/lichen                       |
+| **Akurasi Global**    | Overall Accuracy: **74.4%**                                                                                                                                                              |
+| **Format**            | GeoTIFF                                                                                                                                                                                  |
+| **Akses**             | **GRATIS**                                                                                                                                                                               |
+| **URL**               | https://worldcover2020.esa.int/                                                                                                                                                          |
 
 **KEKURANGAN untuk Proposal Ini**:
 - ❌ Hanya tersedia untuk 2020 dan 2021 (tidak ada 2015 dan 2025)
@@ -1202,26 +1202,26 @@ Export.image.toDrive({image: dynamicWorld.mode(), ...});
 
 #### **C. ESRI Land Cover (10m)**
 
-| Aspek | Detail |
-|-------|--------|
-| **Provider** | Esri & Impact Observatory |
-| **Resolution** | **10m** |
-| **Temporal Coverage** | **2017-2023** (annual) |
-| **Jumlah Kelas** | 9 kelas |
-| **Akurasi** | **>75%** global (average over 75% per year) |
-| **Akses** | **GRATIS** via ArcGIS Living Atlas |
-| **URL** | https://livingatlas.arcgis.com/landcover/ |
+| Aspek                 | Detail                                     |
+|-----------------------|--------------------------------------------|
+| **Provider**          | Esri & Impact Observatory                  |
+| **Resolution**        | **10m**                                    |
+| **Temporal Coverage** | **2017-2023** (annual)                     |
+| **Jumlah Kelas**      | 9 kelas                                    |
+| **Akurasi**           | **>75%** global (average over 75% per year)|
+| **Akses**             | **GRATIS** via ArcGIS Living Atlas         |
+| **URL**               | https://livingatlas.arcgis.com/landcover/  |
 
 ---
 
 #### **D. MODIS Land Cover (MCD12Q1)**
 
-| Aspek | Detail |
-|-------|--------|
-| **Resolution** | **500m** |
-| **Temporal Coverage** | 2001 - Present (annual) |
-| **Kelas** | 17 kelas (IGBP scheme) |
-| **Akses** | GRATIS via NASA EarthData |
+| Aspek                 | Detail                        |
+|-----------------------|-------------------------------|
+| **Resolution**        | **500m**                      |
+| **Temporal Coverage** | 2001 - Present (annual)       |
+| **Kelas**             | 17 kelas (IGBP scheme)        |
+| **Akses**             | GRATIS via NASA EarthData     |
 
 **KEKURANGAN**:
 - ❌ Resolusi 500m terlalu rendah untuk Kota Jambi (169 km²)
@@ -1233,13 +1233,13 @@ Export.image.toDrive({image: dynamicWorld.mode(), ...});
 
 #### **A. Google Earth Pro (RECOMMENDED untuk Validasi Visual)**
 
-| Aspek | Detail |
-|-------|--------|
-| **Resolution** | 0.5-2m (varies) |
-| **Coverage** | Global |
-| **Akses** | **GRATIS** (desktop app) |
-| **Kelebihan** | ✅ Resolusi sangat tinggi <br> ✅ Bisa lihat historical imagery <br> ✅ Gratis |
-| **Kekurangan** | ❌ Tanggal akuisisi tidak selalu match dengan Landsat <br> ❌ Hanya visual (RGB), tidak ada NIR/SWIR <br> ❌ Tidak bisa analisis otomatis |
+| Aspek         | Detail                                                                                                                           |
+|---------------|----------------------------------------------------------------------------------------------------------------------------------|
+| **Resolution**| 0.5-2m (varies)                                                                                                                  |
+| **Coverage**  | Global                                                                                                                           |
+| **Akses**     | **GRATIS** (desktop app)                                                                                                         |
+| **Kelebihan** | ✅ Resolusi sangat tinggi <br> ✅ Bisa lihat historical imagery <br> ✅ Gratis                                                     |
+| **Kekurangan**| ❌ Tanggal akuisisi tidak selalu match dengan Landsat <br> ❌ Hanya visual (RGB), tidak ada NIR/SWIR <br> ❌ Tidak bisa analisis otomatis |
 
 **Cara Menggunakan untuk Ground Truth**:
 1. Buka Google Earth Pro
@@ -1252,12 +1252,12 @@ Export.image.toDrive({image: dynamicWorld.mode(), ...});
 
 #### **B. Bing Maps / Maxar Imagery**
 
-| Aspek | Detail |
-|-------|--------|
-| **Resolution** | 0.3-0.5m |
-| **Akses** | Gratis via QGIS Plugin (QuickMapServices) |
-| **Kelebihan** | Resolusi tinggi, akses mudah |
-| **Kekurangan** | Tanggal tidak konsisten |
+| Aspek          | Detail                                     |
+|----------------|--------------------------------------------|
+| **Resolution** | 0.3-0.5m                                   |
+| **Akses**      | Gratis via QGIS Plugin (QuickMapServices)  |
+| **Kelebihan**  | Resolusi tinggi, akses mudah               |
+| **Kekurangan** | Tanggal tidak konsisten                    |
 
 ---
 
@@ -1265,45 +1265,45 @@ Export.image.toDrive({image: dynamicWorld.mode(), ...});
 
 **Protokol Standar untuk Ground Truth Field Survey**:
 
-| Parameter | Rekomendasi |
-|-----------|-------------|
-| **Jumlah Sampel** | **Minimum 50 titik per kelas** (total 250 titik untuk 5 kelas) |
-| **Distribusi** | Stratified random sampling (merata di seluruh area) |
-| **Jarak Antar Titik** | Minimum 90m (3× resolusi Landsat) untuk independensi spasial |
-| **Peralatan** | GPS handheld (akurasi <5m), kamera, form lapangan |
-| **Data yang Dicatat** | Koordinat, kelas tutupan lahan, foto, timestamp, deskripsi |
-| **Waktu Survey** | **Sinkron dengan tanggal akuisisi citra** (±2 minggu) |
+| Parameter              | Rekomendasi                                                            |
+|------------------------|------------------------------------------------------------------------|
+| **Jumlah Sampel**      | **Minimum 50 titik per kelas** (total 250 titik untuk 5 kelas)        |
+| **Distribusi**         | Stratified random sampling (merata di seluruh area)                    |
+| **Jarak Antar Titik**  | Minimum 90m (3× resolusi Landsat) untuk independensi spasial          |
+| **Peralatan**          | GPS handheld (akurasi <5m), kamera, form lapangan                      |
+| **Data yang Dicatat**  | Koordinat, kelas tutupan lahan, foto, timestamp, deskripsi             |
+| **Waktu Survey**       | **Sinkron dengan tanggal akuisisi citra** (±2 minggu)                  |
 
 **Format Database Ground Truth**:
 
-| ID | Latitude | Longitude | Kelas | Foto | Tanggal | Akurasi GPS | Catatan |
-|----|----------|-----------|-------|------|---------|-------------|---------|
-| GT001 | -1.5678 | 103.6234 | Vegetasi Tinggi | IMG_001.jpg | 2025-07-15 | 3.2m | Hutan kota, kanopi rapat |
-| GT002 | -1.5691 | 103.6189 | Badan Air | IMG_002.jpg | 2025-07-15 | 2.8m | Sungai Batanghari |
-| ... | ... | ... | ... | ... | ... | ... | ... |
+| ID    | Latitude  | Longitude | Kelas           | Foto        | Tanggal    | Akurasi GPS | Catatan                |
+|-------|-----------|-----------|-----------------|-------------|------------|-------------|------------------------|
+| GT001 | -1.5678   | 103.6234  | Vegetasi Tinggi | IMG_001.jpg | 2025-07-15 | 3.2m        | Hutan kota, kanopi rapat |
+| GT002 | -1.5691   | 103.6189  | Badan Air       | IMG_002.jpg | 2025-07-15 | 2.8m        | Sungai Batanghari      |
+| ...   | ...       | ...       | ...             | ...         | ...        | ...         | ...                    |
 
 ---
 
 ### **Opsi 4: Data Sekunder dari Instansi Pemerintah**
 
-| Sumber | Jenis Data | Skala/Resolusi | Akses | Kelebihan | Kekurangan |
-|--------|------------|----------------|-------|-----------|------------|
-| **Badan Informasi Geospasial (BIG)** | Peta Rupabumi Indonesia (RBI) | 1:25,000 - 1:50,000 | Berbayar / request | ✅ Data resmi <br> ✅ Teruji akurasi | ❌ Mungkin outdated <br> ❌ Akses lambat |
-| **Kementerian LHK (KLHK)** | Peta Tutupan Lahan Indonesia | 1:250,000 (national) | Request resmi | ✅ Standar nasional | ❌ Skala besar (tidak detail untuk kota) |
-| **BAPPEDA Kota Jambi** | Peta tematik kota, RTRW | Varies | Request langsung | ✅ Spesifik untuk Jambi <br> ✅ Update | ❌ Perlu koordinasi formal |
-| **Dinas Pertanahan Kota Jambi** | Data penggunaan lahan | Parcel-based | Request | ✅ Detail | ❌ Fokus ke administrasi, bukan biofisik |
+| Sumber                              | Jenis Data                      | Skala/Resolusi       | Akses            | Kelebihan                                     | Kekurangan                                  |
+|-------------------------------------|---------------------------------|----------------------|------------------|-----------------------------------------------|---------------------------------------------|
+| **Badan Informasi Geospasial (BIG)**| Peta Rupabumi Indonesia (RBI)   | 1:25,000 - 1:50,000  | Berbayar/request | ✅ Data resmi <br> ✅ Teruji akurasi           | ❌ Mungkin outdated <br> ❌ Akses lambat      |
+| **Kementerian LHK (KLHK)**          | Peta Tutupan Lahan Indonesia    | 1:250,000 (national) | Request resmi    | ✅ Standar nasional                           | ❌ Skala besar (tidak detail untuk kota)     |
+| **BAPPEDA Kota Jambi**              | Peta tematik kota, RTRW         | Varies               | Request langsung | ✅ Spesifik untuk Jambi <br> ✅ Update         | ❌ Perlu koordinasi formal                   |
+| **Dinas Pertanahan Kota Jambi**     | Data penggunaan lahan           | Parcel-based         | Request          | ✅ Detail                                     | ❌ Fokus ke administrasi, bukan biofisik     |
 
 ---
 
 ## M.4. Perbandingan Metode Akuisisi Ground Truth
 
-| Metode | Biaya | Waktu | Akurasi | Independensi | Rekomendasi untuk Proposal Ini |
-|--------|-------|-------|---------|--------------|--------------------------------|
-| **Dynamic World** | GRATIS | 1-2 hari | Sedang (73-74%) | ✅ Tinggi (Sentinel-2) | ⭐⭐⭐⭐⭐ **SANGAT DISARANKAN** |
-| **ESA WorldCover** | GRATIS | 1-2 hari | Tinggi (74%) | ✅ Tinggi | ⭐⭐⭐⭐ (tapi tidak ada 2015) |
-| **Google Earth Digitasi** | GRATIS | 3-5 hari | Tinggi (tergantung skill) | ⚠️ Sedang (visual only) | ⭐⭐⭐⭐ |
-| **Survei Lapangan** | Tinggi (Rp 5-10 juta) | 1-2 minggu | ✅ **Sangat Tinggi** | ✅ **Sangat Tinggi** | ⭐⭐⭐⭐⭐ (jika ada budget) |
-| **Data BIG/KLHK** | Sedang-Tinggi | 2-4 minggu | Tinggi | ✅ Tinggi | ⭐⭐⭐ (tergantung ketersediaan) |
+| Metode                    | Biaya                 | Waktu      | Akurasi                       | Independensi            | Rekomendasi untuk Proposal Ini       |
+|---------------------------|-----------------------|------------|-------------------------------|-------------------------|--------------------------------------|
+| **Dynamic World**         | GRATIS                | 1-2 hari   | Sedang (73-74%)               | ✅ Tinggi (Sentinel-2)  | ⭐⭐⭐⭐⭐ **SANGAT DISARANKAN**         |
+| **ESA WorldCover**        | GRATIS                | 1-2 hari   | Tinggi (74%)                  | ✅ Tinggi               | ⭐⭐⭐⭐ (tapi tidak ada 2015)          |
+| **Google Earth Digitasi** | GRATIS                | 3-5 hari   | Tinggi (tergantung skill)     | ⚠️ Sedang (visual only) | ⭐⭐⭐⭐                                |
+| **Survei Lapangan**       | Tinggi (Rp 5-10 juta) | 1-2 minggu | ✅ **Sangat Tinggi**           | ✅ **Sangat Tinggi**    | ⭐⭐⭐⭐⭐ (jika ada budget)            |
+| **Data BIG/KLHK**         | Sedang-Tinggi         | 2-4 minggu | Tinggi                        | ✅ Tinggi               | ⭐⭐⭐ (tergantung ketersediaan)       |
 
 ---
 
@@ -1323,12 +1323,12 @@ Export.image.toDrive({image: dynamicWorld.mode(), ...});
 
 ### **Pembagian Training dan Testing**:
 
-| Sumber | Jumlah | Penggunaan |
-|--------|--------|------------|
-| Dynamic World | 200 titik | 70% Training, 30% Testing |
-| Survei Lapangan | 250 titik | 50% Training, 50% Testing |
-| Google Earth Digitasi | 50 ROI | Training only (area-based) |
-| **TOTAL** | ~450 sampel | Training: 315 / Testing: 135 |
+| Sumber                | Jumlah    | Penggunaan                     |
+|-----------------------|-----------|--------------------------------|
+| Dynamic World         | 200 titik | 70% Training, 30% Testing      |
+| Survei Lapangan       | 250 titik | 50% Training, 50% Testing      |
+| Google Earth Digitasi | 50 ROI    | Training only (area-based)     |
+| **TOTAL**             | ~450 sampel | Training: 315 / Testing: 135 |
 
 ---
 
@@ -1390,14 +1390,14 @@ Dengan tidak adanya ground truth independen, **validitas seluruh penelitian ini 
 
 ## N.1. Skor Keseluruhan Proposal
 
-| Komponen | Bobot | Nilai (0-100) | Skor Tertimbang |
-|----------|-------|---------------|-----------------|
-| **Latar Belakang & Motivasi** | 15% | 70 | 10.5 |
-| **Tinjauan Pustaka** | 15% | 65 | 9.75 |
-| **Metodologi** | 35% | 35 | 12.25 |
-| **Kelayakan Pelaksanaan** | 20% | 50 | 10.0 |
-| **Penulisan & Format** | 15% | 60 | 9.0 |
-| **TOTAL** | 100% | - | **51.5/100** |
+| Komponen                       | Bobot | Nilai (0-100) | Skor Tertimbang |
+|--------------------------------|-------|---------------|-----------------|
+| **Latar Belakang & Motivasi**  | 15%   | 70            | 10.5            |
+| **Tinjauan Pustaka**           | 15%   | 65            | 9.75            |
+| **Metodologi**                 | 35%   | 35            | 12.25           |
+| **Kelayakan Pelaksanaan**      | 20%   | 50            | 10.0            |
+| **Penulisan & Format**         | 15%   | 60            | 9.0             |
+| **TOTAL**                      | 100%  | -             | **51.5/100**    |
 
 **Interpretasi**:
 - 0-50: **Tidak Lulus**
