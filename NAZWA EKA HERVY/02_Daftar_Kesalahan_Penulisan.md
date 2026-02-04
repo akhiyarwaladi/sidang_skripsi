@@ -216,7 +216,44 @@ Bagian ini mencatat temuan dari analisis awal yang kemudian dikoreksi setelah ve
 
 ---
 
-## F. RINGKASAN PRIORITAS PERBAIKAN
+## F. SARAN PENYEMPURNAAN METODOLOGI: SELECTIVE HIERARCHICAL REFINEMENT
+
+Selain kesalahan penulisan, terdapat peluang penyempurnaan metodologi yang signifikan pada bagian Teknik Analisis Data (Bab III). Detail lengkap saran ini dapat dilihat di **01_Daftar_Pertanyaan_dan_Kesalahan_Konsep.md** Bagian C. Berikut ringkasannya:
+
+### Masalah yang Diidentifikasi
+
+Proposal mendeskripsikan 2 tahap clustering (Tahap 1: global, Tahap 2: per aspek Tri Dharma), tetapi **tidak menyediakan kriteria formal** untuk:
+- Menentukan cluster mana dari Tahap 1 yang perlu dianalisis lebih lanjut di Tahap 2
+- Menilai apakah suatu cluster sudah cukup homogen secara internal
+- Menghentikan proses *splitting* ketika cluster sudah memadai
+
+### Saran: Gunakan Coefficient of Variation (CV) sebagai Kriteria Homogenitas
+
+Pendekatan **Selective Hierarchical Refinement** -- berakar pada algoritma ISODATA (Ball & Hall, 1965), G-Means (Hamerly & Elkan, 2003), dan Bisecting K-Means -- menyarankan agar setiap cluster dievaluasi menggunakan **Coefficient of Variation (CV = σ/μ)** per variabel. Cluster dengan CV > **0.25** pada salah satu variabel dianggap masih heterogen dan menjadi kandidat untuk dibelah (*split*) menjadi sub-cluster.
+
+**Mengapa CV = 0.25?**
+- CV bersifat *dimensionless* sehingga dapat dibandingkan antar variabel dengan skala berbeda (SKS Pendidikan vs SKS Pengabdian)
+- Dalam literatur statistik, CV ≈ 0.23-0.25 merupakan ambang batas di mana heterogenitas kelompok mulai signifikan (Eldridge et al., 2006)
+- Ambang batas ini cukup ketat untuk menghasilkan cluster yang *actionable* bagi kebijakan
+
+### Opsi Implementasi untuk Skripsi S1
+
+| Opsi | Tingkat Kesulitan | Deskripsi |
+|------|-------------------|-----------|
+| **A (Minimal)** | Rendah | Evaluasi *post-hoc* CV per cluster per variabel setelah K-Means standar. Laporkan cluster mana yang melebihi ambang batas sebagai temuan analitis |
+| **B (Moderat)** | Sedang | Setelah K-Means Tahap 1, hanya cluster dengan CV > 0.25 yang di-*split* menggunakan K-Means(k=2). Satu level *refinement* saja |
+| **C (Lanjut)** | Tinggi | Gunakan `sklearn.cluster.BisectingKMeans` dengan *custom stopping criterion* berbasis CV |
+
+### Referensi Tambahan yang Perlu Ditambahkan (Jika Saran Diadopsi)
+
+- Ball, G.H. & Hall, D.J. (1965). *ISODATA, A Novel Method of Data Analysis and Pattern Classification*. Stanford Research Institute.
+- Hamerly, G. & Elkan, C. (2003). *Learning the k in k-means*. NeurIPS, pp. 281-288.
+- Pelleg, D. & Moore, A. (2000). *X-means: Extending k-means with efficient estimation of the number of clusters*. ICML.
+- Eldridge, S.M., Ashby, D., & Kerry, S. (2006). *Sample size for cluster randomized trials*. International Journal of Epidemiology, 35(5), 1292-1300.
+
+---
+
+## G. RINGKASAN PRIORITAS PERBAIKAN
 
 ### Perbaikan WAJIB (Sebelum Sidang):
 1. **Lengkapi daftar pustaka** -- 40+ referensi belum tercantum. Ini adalah masalah paling serius.
@@ -231,7 +268,11 @@ Bagian ini mencatat temuan dari analisis awal yang kemudian dikoreksi setelah ve
 8. Konsistensi italic untuk semua istilah asing
 9. Perbaiki spasi pada penomoran sub-bab (1.1, 1.2, 1.4)
 
+### Saran Penyempurnaan Metodologi:
+10. **Tambahkan kriteria homogenitas cluster** menggunakan Coefficient of Variation (CV ≤ 0.25) sebagai *stopping criterion* untuk *selective hierarchical refinement* -- lihat Bagian F di atas dan dokumen 01 Bagian C untuk detail lengkap
+11. **Jelaskan hubungan formal** antara Clustering Tahap 1 dan Tahap 2 -- saat ini tidak ada kriteria kapan cluster perlu di-*split* lebih lanjut
+
 ### Perbaikan Minor:
-10. Jelaskan singkatan saat pertama muncul (ANN, GMM, t-SNE)
-11. Konsistensi penulisan istilah teknis (clustering, K-Means, data mining)
-12. Huruf kapital "Masyarakat" di tengah kalimat -- harus huruf kecil
+12. Jelaskan singkatan saat pertama muncul (ANN, GMM, t-SNE)
+13. Konsistensi penulisan istilah teknis (clustering, K-Means, data mining)
+14. Huruf kapital "Masyarakat" di tengah kalimat -- harus huruf kecil

@@ -7,7 +7,9 @@ Dokumen ini disusun sebagai panduan pertanyaan sidang dan daftar kesalahan konse
 
 Dokumen terbagi dua bagian utama:
 - **Bagian A** berisi pertanyaan-pertanyaan yang disarankan untuk diajukan saat sidang, lengkap dengan catatan konteks agar penguji dapat menggali lebih dalam.
-- **Bagian B** berisi daftar kesalahan konsep yang ditemukan dalam proposal, disertai bukti verifikasi.
+- **Bagian B** berisi pertanyaan terkait penyempurnaan metodologi, khususnya tentang kriteria homogenitas cluster.
+- **Bagian C** berisi saran metodologi *Selective Hierarchical Refinement* menggunakan *Coefficient of Variation* (CV) sebagai kriteria *splitting*.
+- **Bagian D** berisi daftar kesalahan konsep yang ditemukan dalam proposal, disertai bukti verifikasi.
 
 ---
 
@@ -173,7 +175,97 @@ Pratama et al. (2026) sudah melakukan K-Means pada data BKD di universitas lain.
 
 ---
 
-## B. KESALAHAN KONSEP (TERVERIFIKASI)
+### 5. Pertanyaan Seputar Penyempurnaan Metodologi
+
+**Pertanyaan 19 -- Tidak adanya kriteria formal untuk menghubungkan Clustering Tahap 1 dan Tahap 2**
+
+Proposal menyebutkan dua tahap clustering: Tahap 1 (clustering global pada semua variabel Tri Dharma) dan Tahap 2 (clustering per aspek menggunakan rubrik BKD). Namun tidak ada **kriteria formal** yang menentukan kapan suatu cluster dari Tahap 1 perlu dianalisis lebih lanjut di Tahap 2, dan kapan cluster sudah cukup homogen sehingga tidak perlu di-*split* lagi.
+
+> *"Apa kriteria yang digunakan untuk menentukan bahwa suatu cluster dari Tahap 1 perlu dianalisis lebih lanjut di Tahap 2? Bagaimana jika suatu cluster sudah cukup homogen -- apakah tetap dilakukan clustering Tahap 2?"*
+
+**Catatan untuk penguji:** Pertanyaan ini membuka peluang untuk menyarankan pendekatan **Selective Hierarchical Refinement** menggunakan *Coefficient of Variation* (CV) sebagai kriteria *stopping*. Lihat bagian C di bawah untuk detail saran metodologi.
+
+---
+
+**Pertanyaan 20 -- Homogenitas cluster dan kriteria penghentian**
+
+Proposal tidak menyebutkan kriteria apa pun untuk menilai apakah cluster yang terbentuk sudah cukup homogen secara internal. Evaluasi hanya mengandalkan metrik global (Silhouette Score, DBI, Elbow), bukan metrik per-cluster.
+
+> *"Selain metrik evaluasi global, apakah ada rencana untuk menilai homogenitas internal masing-masing cluster? Misalnya, bagaimana jika satu cluster memiliki standar deviasi yang sangat tinggi pada salah satu variabel?"*
+
+---
+
+## C. SARAN METODOLOGI: SELECTIVE HIERARCHICAL REFINEMENT
+
+### Latar Belakang
+
+Pendekatan 2-tahap yang diusulkan mahasiswa (Clustering Global → Clustering Per Aspek) merupakan langkah yang baik, namun memiliki kelemahan metodologis: tidak ada **kriteria formal** yang menghubungkan kedua tahap. Semua cluster dari Tahap 1 secara otomatis masuk ke Tahap 2, tanpa mempertimbangkan apakah cluster tersebut sudah homogen atau masih heterogen.
+
+### Konsep yang Disarankan
+
+**Selective Hierarchical Refinement** adalah pendekatan di mana cluster hasil K-Means dievaluasi secara individual menggunakan ukuran dispersi internal. Cluster yang melebihi ambang batas dispersi tertentu akan di-*split* (dibelah) menjadi sub-cluster, sementara cluster yang sudah homogen dibiarkan utuh.
+
+Pendekatan ini berakar pada beberapa algoritma yang sudah mapan dalam literatur:
+
+1. **ISODATA** (Ball & Hall, 1965) -- Algoritma pertama yang memperkenalkan mekanisme *split/merge* berdasarkan parameter standar deviasi maksimum (θ_s). Jika standar deviasi suatu cluster melebihi θ_s, cluster tersebut dibelah menjadi dua.
+   - Referensi: Ball, G.H. & Hall, D.J. (1965). *ISODATA, A Novel Method of Data Analysis and Pattern Classification*. Stanford Research Institute, Menlo Park, California.
+
+2. **G-Means** (Hamerly & Elkan, 2003) -- Menggunakan uji statistik Anderson-Darling untuk menguji apakah data dalam cluster mengikuti distribusi Gaussian. Jika tidak, cluster di-*split*. Lebih *principled* secara statistik dibandingkan ambang batas σ tetap.
+   - Referensi: Hamerly, G. & Elkan, C. (2003). *Learning the k in k-means*. Proceedings of the 17th International Conference on Neural Information Processing Systems (NeurIPS), pp. 281-288.
+
+3. **X-Means** (Pelleg & Moore, 2000) -- Menggunakan *Bayesian Information Criterion* (BIC) untuk menentukan apakah *splitting* suatu cluster meningkatkan kualitas model.
+   - Referensi: Pelleg, D. & Moore, A. (2000). *X-means: Extending k-means with efficient estimation of the number of clusters*. Proceedings of the 17th International Conference on Machine Learning (ICML).
+
+4. **Bisecting K-Means** (Steinbach et al., 2000) -- Secara iteratif membelah cluster dengan SSE (*Sum of Squared Errors*) tertinggi. Tersedia di scikit-learn sebagai `BisectingKMeans`.
+   - Referensi: Steinbach, M., Karypis, G., & Kumar, V. (2000). *A comparison of document clustering techniques*. KDD Workshop on Text Mining.
+
+### Parameter yang Disarankan: Coefficient of Variation (CV) ≤ 0.25
+
+Untuk konteks data BKD, disarankan menggunakan **Coefficient of Variation** (CV = σ/μ) sebagai kriteria homogenitas, bukan standar deviasi mentah. Alasannya:
+
+- **Standar deviasi mentah** bergantung pada skala data dan tidak dapat dibandingkan antar variabel yang berbeda (misalnya SKS Pendidikan yang rata-rata tinggi vs SKS Pengabdian yang rata-rata rendah).
+- **CV bersifat *dimensionless*** -- rasio σ terhadap μ -- sehingga dapat dibandingkan secara langsung antar variabel maupun antar cluster.
+- Dalam literatur statistik klinis dan *cluster randomized trials*, **CV ≈ 0.23-0.25** merupakan ambang batas di mana heterogenitas kelompok mulai signifikan secara statistik (Eldridge et al., 2006).
+- Referensi: Eldridge, S.M., Ashby, D., & Kerry, S. (2006). *Sample size for cluster randomized trials: effect of coefficient of variation of cluster size and analysis method*. International Journal of Epidemiology, 35(5), 1292-1300.
+
+### Algoritma yang Disarankan
+
+```
+Input: Hasil K-Means Clustering Tahap 1 (cluster C₁, C₂, ..., Cₖ)
+Parameter: CV_threshold = 0.25
+
+Untuk setiap cluster Cᵢ:
+    Untuk setiap variabel Xⱼ ∈ {Pendidikan, Penelitian, Pengabdian, Penunjang}:
+        Hitung CVⱼ = σ(Xⱼ dalam Cᵢ) / μ(Xⱼ dalam Cᵢ)
+
+    Jika max(CVⱼ) > CV_threshold DAN |Cᵢ| ≥ jumlah minimum anggota:
+        Terapkan K-Means(k=2) pada Cᵢ → hasilkan Cᵢₐ dan Cᵢᵦ
+        Evaluasi kembali Cᵢₐ dan Cᵢᵦ secara rekursif
+    Jika tidak:
+        Cᵢ dianggap homogen → tidak perlu dibelah lagi
+
+Output: Cluster akhir yang seluruhnya memenuhi kriteria CV ≤ 0.25
+```
+
+### Manfaat untuk Penelitian Ini
+
+1. **Memberikan kriteria formal** yang menghubungkan Clustering Tahap 1 dan Tahap 2 (saat ini tidak ada).
+2. **Menghindari *over-splitting*** -- cluster yang sudah homogen tidak perlu dianalisis lebih lanjut.
+3. **Menghasilkan cluster yang *actionable*** -- setiap cluster akhir memiliki jaminan homogenitas internal, sehingga rekomendasi kebijakan untuk masing-masing cluster lebih tepat sasaran.
+4. **Sejalan dengan sifat iteratif CRISP-DM** yang sudah diadopsi mahasiswa.
+5. **Memperkuat novelty** penelitian -- pendekatan ini belum ditemukan dalam penelitian terdahulu yang dikutip mahasiswa.
+
+### Catatan Implementasi untuk Skripsi S1
+
+Implementasi penuh ISODATA atau G-Means mungkin terlalu ambisius untuk skripsi S1. Alternatif yang lebih realistis:
+
+- **Opsi A (Minimal):** Jalankan K-Means standar, lalu lakukan evaluasi *post-hoc* CV per cluster per variabel. Laporkan cluster mana yang melebihi ambang batas 0.25 sebagai kandidat untuk investigasi lebih lanjut. Ini bersifat **analitis/interpretatif**, bukan perubahan algoritma.
+- **Opsi B (Moderat):** Implementasikan *selective refinement* sederhana: setelah K-Means Tahap 1, hanya cluster dengan CV > 0.25 yang di-*split* menggunakan K-Means(k=2). Satu level refinement saja, tanpa rekursi.
+- **Opsi C (Lanjut):** Implementasikan Bisecting K-Means dari scikit-learn (`sklearn.cluster.BisectingKMeans`) yang sudah menyediakan mekanisme *splitting* otomatis, dengan menambahkan *custom stopping criterion* berbasis CV.
+
+---
+
+## D. KESALAHAN KONSEP (TERVERIFIKASI)
 
 Bagian ini memuat kesalahan-kesalahan konseptual yang ditemukan dalam proposal. Setiap temuan dilengkapi dengan bukti verifikasi dan sumber rujukan. Urutan disusun dari yang paling serius.
 

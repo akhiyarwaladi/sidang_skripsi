@@ -469,17 +469,51 @@ Dashboard yang menampilkan data historis per semester bukan dashboard real-time,
 
 ---
 
-## C. RINGKASAN PRIORITAS
+## C. EVALUASI REVISI DAFTAR PUSTAKA (FEBRUARI 2025)
+
+Mahasiswa menyerahkan revisi DAFTAR PUSTAKA dalam bentuk foto cetak (HEIC). Berikut ringkasan evaluasi:
+
+### Yang Sudah Diperbaiki:
+1. **13 dari 19 entri fabrikasi DIHAPUS** dari daftar pustaka
+2. **Zein & Eriana (2023) sekarang benar** -- judul, jurnal (SAINSTECH), dan DOI sudah sesuai paper asli
+3. **Purwani et al. (2021) ditambahkan** -- paper asli terverifikasi (KOMPUTAKI)
+4. **Muarif & Dana (2024) ditambahkan** -- kemungkinan paper asli di JATI ITN Malang
+5. **Kimball & Caserta (tahun salah) dihapus**
+
+### Yang BELUM Diperbaiki / Masalah Baru:
+1. **Teks Bab 2.1-2.5 BELUM DIREVISI** -- masih mengutip ~40+ penulis fabrikasi (Kusnadi, Lukman, Mahardika, Nasution, Octavia, Pradana, Qomariyah, Riyanto, dll.) yang sekarang TIDAK ADA di daftar pustaka manapun. **Gap teks vs daftar pustaka justru semakin besar.**
+2. **3 entri baru tidak ditemukan**: Patmah (2023), Chudri (2023), Wahyu (2025)
+3. **1 jurnal palsu baru**: "Golden Gate Multidisiplin" tidak terdaftar di SINTA/Garuda/portal ISSN
+4. **"Aroob" (2022) salah kutip**: seharusnya Jamaluddin et al. (2022), nama penulis salah (Aroob→Asrobi), nama universitas salah (Hamawadi→Hamzanwadi)
+5. **Iddrus dkk. (2025) masih tidak ada** di daftar pustaka
+
+### Pertanyaan Sidang Tambahan Terkait Revisi:
+
+**Pertanyaan 17 -- Revisi daftar pustaka tidak disertai revisi teks**
+
+> *"Anda sudah menghapus 13 entri fabrikasi dari daftar pustaka, tetapi teks di Bab 2.1-2.3 masih mengutip puluhan nama penulis yang sama (Kusnadi, Lukman, Mahardika, dst.). Referensi ini sekarang tidak ada di daftar pustaka. Mengapa hanya daftar pustaka yang direvisi tanpa merevisi teksnya? Bukankah ini menunjukkan bahwa teks tinjauan pustaka memang tidak pernah dibaca dari sumber aslinya?"*
+
+**Pertanyaan 18 -- Referensi baru yang juga tidak ditemukan**
+
+> *"Dalam revisi, Anda menambahkan referensi Patmah (2023), Chudri (2023), dan Wahyu (2025). Ketiga referensi ini juga tidak dapat ditemukan di database akademik manapun. Jurnal 'Golden Gate Multidisiplin' tempat paper Wahyu diklaim terbit tidak terdaftar di SINTA. Dari mana Anda mendapatkan referensi-referensi baru ini?"*
+
+**Pertanyaan 19 -- Salah kutip Jamaluddin et al.**
+
+> *"Anda mengutip 'Aroob (2022)' tentang desain SI di Universitas 'Hamawadi'. Paper asli ini ditulis oleh Jamaluddin, Arianti, Novianti, & Asrobi (2022) di Universitas Hamzanwadi, diterbitkan di Infotek Vol.5 No.2 dengan DOI 10.29408/jit.v5i2.6218. Nama penulis, nama universitas, dan judul semuanya berbeda. Apakah Anda benar-benar membaca paper ini?"*
+
+---
+
+## D. RINGKASAN PRIORITAS
 
 ### Masalah SANGAT SERIUS (Harus Dijawab Sebelum Sidang Dilanjutkan):
 
-1. **14 dari 19 referensi daftar pustaka tidak dapat ditemukan (73.7%)** -- terverifikasi 2x melalui Google Scholar, Garuda, SINTA, katalog penerbit, dan portal ISSN. **4 nama jurnal terbukti tidak ada** (Jurnal Visualisasi Data, Jurnal Data Mining Indonesia, Int'l J. of EDM, Journal of BI).
-2. **2 referensi yang asli sengaja dipalsukan detail sitasinya** -- Hardiansyah et al. (SAINSTECH → "Jurnal SI") dan Lessy et al. (JSON → "Jurnal Informatika"), dengan judul, jurnal, volume, dan halaman semuanya diubah. Ini bukan typo tetapi pemalsuan.
-3. **3 dari 8 penelitian terdahulu di Tabel 2 tidak ditemukan** -- Hendarto & Yusuf, Yusuf & Rahmadani, Fauzan & Widodo
-4. **Daftar pustaka sangat tidak lengkap** -- 55+ referensi tidak tercantum
-5. **Referensi dasar penelitian tidak dapat diverifikasi** -- Iddrus dkk. (2025) tidak ada di mana pun
-6. **Tahun buku Kimball & Caserta diubah 16 tahun** -- dari 2004 ke 2020, terverifikasi di situs resmi Wiley
-7. **Referensi Fitria & Yadi salah atribusi + dipalsukan** -- paper asli tentang gizi buruk di Jurnal Mantik, bukan drill down di "Jurnal Visualisasi Data" (jurnal yang tidak ada)
+1. ~~14 dari 19 referensi daftar pustaka fabrikasi~~ → **SEBAGIAN DIPERBAIKI**: 13 entri fabrikasi dihapus, Zein & Eriana benar. **TETAPI** 3 entri baru juga tidak ditemukan, 1 jurnal palsu baru ("Golden Gate Multidisiplin"), dan 1 salah kutip (Aroob/Jamaluddin)
+2. **[TIDAK DIPERBAIKI] Teks Bab 2.1-2.5 masih mengutip ~40+ penulis fabrikasi** yang sekarang tidak ada di daftar pustaka manapun -- **seluruh tinjauan pustaka harus ditulis ulang**
+3. **3 dari 8 penelitian terdahulu di Tabel 2 tidak ditemukan** -- Hendarto & Yusuf, Yusuf & Rahmadani, Fauzan & Widodo -- **TIDAK DIPERBAIKI**
+4. **[LEBIH BURUK] Gap teks vs daftar pustaka semakin besar** -- teks masih mengutip 55+ referensi yang tidak ada di daftar pustaka
+5. **Referensi dasar penelitian tidak dapat diverifikasi** -- Iddrus dkk. (2025) tidak ada di mana pun -- **TIDAK DIPERBAIKI**
+6. ~~Tahun buku Kimball & Caserta~~ → **DIPERBAIKI** (referensi dihapus)
+7. **Referensi Fitria & Yadi** -- perlu dicek apakah sudah diperbaiki di revisi
 
 ### Masalah Serius:
 8. Typo "TABLEU" di judul proposal -- nama tools utama salah tulis

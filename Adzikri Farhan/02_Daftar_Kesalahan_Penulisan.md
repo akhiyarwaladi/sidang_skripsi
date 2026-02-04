@@ -279,14 +279,65 @@ Namun **tidak satupun** dari referensi ini ada di daftar pustaka. Lebih jauh lag
 
 ---
 
-## F. RINGKASAN PRIORITAS PERBAIKAN
+## F. EVALUASI REVISI DAFTAR PUSTAKA (FEBRUARI 2025)
+
+**Catatan:** Mahasiswa menyerahkan revisi DAFTAR PUSTAKA dalam bentuk foto cetak (HEIC). Berikut hasil evaluasi revisi tersebut terhadap temuan sebelumnya.
+
+### Perubahan Positif (Yang Sudah Diperbaiki):
+
+| No | Perubahan | Status |
+|----|-----------|--------|
+| 1 | **13 dari 19 entri fabrikasi DIHAPUS** -- Arifin, Bachtiar, Chandra, Darmawan, Efendi, Fauzi, Gunawan, Hamukti, Hendranala, Horeb, Lavanya, Lessy, Mardiani | BAIK |
+| 2 | **Zein & Eriana (2023) sekarang BENAR** -- judul "Perencanaan Dashboard...Rasmussen", DOI 10.37277/stch, jurnal SAINSTECH | BAIK |
+| 3 | **Purwani et al. (2021) DITAMBAHKAN** -- paper asli terverifikasi di KOMPUTAKI 7(1), tentang dashboard Tableau untuk toko Puppets Skateboard Semarang | BAIK |
+| 4 | **Muarif & Dana (2024) DITAMBAHKAN** -- kemungkinan paper asli di JATI (Jurnal Mahasiswa Teknik Informatika), ITN Malang, tentang Tableau/Open Data Cirebon | BAIK |
+| 5 | **Kimball & Caserta (2020) DIHAPUS** -- referensi dengan tahun salah (2004→2020) sudah tidak ada | BAIK |
+
+### Masalah BARU yang Ditemukan dalam Revisi:
+
+| No | Referensi Baru | Status | Bukti |
+|----|---------------|--------|-------|
+| 1 | **Patmah, A. E. (2023)** -- tentang pelatihan BKD bagi dosen Prodi SI | **TIDAK DITEMUKAN** | Tidak ada penulis "Patmah" dengan paper tentang BKD di database akademik manapun |
+| 2 | **Chudri, D. (2023)** | **TIDAK DITEMUKAN** | Tidak ada informasi apapun tentang penulis ini |
+| 3 | **Wahyu (2025)** -- tentang penjualan tiket kapal dengan metode drill-down | **TIDAK DITEMUKAN** | **Jurnal "Golden Gate Multidisiplin" tidak terdaftar di SINTA/Garuda/portal ISSN manapun** -- ini jurnal palsu baru |
+| 4 | **"Aroob, M." (2022)** -- tentang desain SI perguruan tinggi "Universitas Hamawadi" | **SALAH KUTIP** | Paper asli: **Jamaluddin, J., Arianti, B.D.D., Novianti, B.A., & Asrobi, M. (2022)**. "Desain **Sistem Informasi Tri Dharma** Perguruan Tinggi Universitas **Hamzanwadi**." *Infotek: Jurnal Informatika dan Teknologi*, 5(2), 392-401. DOI: 10.29408/jit.v5i2.6218. **Nama penulis salah** (Aroob→Asrobi), **nama universitas salah** (Hamawadi→Hamzanwadi), **judul tidak lengkap**, dan **seharusnya dikutip sebagai Jamaluddin et al.** bukan Asrobi |
+| 5 | Referensi tentang **"Relasi Kepemimpinan dan Efektivitas Diri Dosen Tridharma"** | **TIDAK DITEMUKAN** | Tidak ada paper dengan kombinasi topik ini yang dapat ditemukan |
+| 6 | **Kawantil** -- tentang visualisasi data produksi pertanian | **BELUM TERVERIFIKASI** | Mungkin ada di JATI ITN Malang (2025), tetapi belum dapat dikonfirmasi sepenuhnya |
+
+### Masalah LAMA yang BELUM Teratasi:
+
+| No | Masalah | Status |
+|----|---------|--------|
+| 1 | **Bab 2.1-2.3 masih mengutip ~27 penulis fabrikasi** (Kusnadi, Lukman, Mahardika, Nasution, Octavia, Pradana, Qomariyah, Riyanto, Suharto, Taufik, Utami, Vina, Wahyudi, Yuliana, Zainal, Fajar, Gumelar, Hariyanto, Iskandar, Jatmiko, Kristanto, dll.) yang mengikuti pola alfabet K-Z-A-K. Penulis-penulis ini **tidak ada** di revisi DAFTAR PUSTAKA maupun di database akademik manapun. Teks proposal **belum direvisi**. | **TIDAK DIPERBAIKI** |
+| 2 | **Bab 2.4-2.5 masih mengutip penulis tidak terverifikasi** (Nugraha, Sari, Wijaya, Pratama, Hidayat, Lestari, Kurniawan, Susanto, Handayani, Putra, Wibowo, Kusuma, Hartono, Setiawan & Maulana, Indrawan, Saputra) | **TIDAK DIPERBAIKI** |
+| 3 | **Fitria & Yadi (2022)** -- masih dikutip di teks (hal. 12, 14) untuk klaim tentang drill-down. Di daftar pustaka lama diatribusikan ke "Jurnal Visualisasi Data" (jurnal palsu). Perlu dicek apakah revisi sudah memperbaiki ini. | **PERLU DICEK** |
+| 4 | **Hendrawan & Dewi (2023)** -- masih dikutip di teks (hal. 3). Paper asli Hendrawan adalah skripsi di UAJY tentang clustering evaluasi dosen, bukan jurnal tentang distribusi beban kerja. | **PERLU DICEK** |
+| 5 | **55+ referensi dalam teks tetap tidak tercantum di daftar pustaka** -- karena teks belum direvisi, gap antara kutipan dalam teks dan daftar pustaka justru **semakin besar** | **LEBIH BURUK** |
+| 6 | **Referensi Iddrus dkk. (2025)** masih tidak ada di daftar pustaka | **TIDAK DIPERBAIKI** |
+
+### Ringkasan Evaluasi Revisi:
+
+| Aspek | Sebelum | Sesudah | Penilaian |
+|-------|---------|---------|-----------|
+| Entri daftar pustaka fabrikasi | 13/19 (68.4%) | ~3 entri baru tidak ditemukan | **Membaik** |
+| Detail sitasi dipalsukan | 3 entri | 1 entri (Aroob/Jamaluddin) | **Membaik** |
+| Jurnal palsu | 4 jurnal | 1 jurnal baru ("Golden Gate Multidisiplin") | **Membaik** |
+| Referensi Zein & Eriana | Dipalsukan total | Sekarang benar dengan DOI | **DIPERBAIKI** |
+| Teks Bab 2.1-2.3 (pola alfabet) | 27 penulis fabrikasi | **BELUM DIREVISI** | **TIDAK BERUBAH** |
+| Gap teks vs daftar pustaka | 55+ referensi hilang | **LEBIH BESAR** karena teks belum berubah | **LEBIH BURUK** |
+
+**Kesimpulan:** Revisi daftar pustaka menunjukkan **perbaikan parsial yang signifikan** -- mahasiswa telah menghapus mayoritas entri fabrikasi dan menambahkan beberapa referensi yang terverifikasi asli. Namun **masalah fundamental belum teratasi**: seluruh teks tinjauan pustaka (Bab 2.1-2.5) masih mengutip puluhan penulis fabrikasi yang kini tidak memiliki entri daftar pustaka sama sekali. Mahasiswa perlu **menulis ulang seluruh tinjauan pustaka** menggunakan referensi yang benar-benar ada.
+
+---
+
+## G. RINGKASAN PRIORITAS PERBAIKAN
 
 ### Perbaikan KRITIS (Sebelum Sidang):
 
-1. **Hanya 1 dari 19 referensi yang benar (94.7% bermasalah)** -- 13 entri fabrikasi, 3 entri dipalsukan detailnya, 2 entri tahun salah. Terverifikasi 2x melalui Google Scholar, Garuda, SINTA, katalog penerbit, dan portal ISSN.
-2. **4 nama jurnal palsu teridentifikasi** -- "Jurnal Visualisasi Data", "Jurnal Data Mining Indonesia", "International Journal of Educational Data Mining", "Journal of Business Intelligence" -- tidak terdaftar di SINTA/Garuda/portal ISSN manapun
-3. **3 paper asli dipalsukan detail sitasinya** -- Hardiansyah et al. (SAINSTECH→"Jurnal SI"), Lessy et al. (JSON→"Jurnal Informatika"), Fitria & Yadi (Mantik→"Jurnal Visualisasi Data"). Judul, jurnal, volume, dan halaman semuanya diubah
-4. **55+ referensi dalam teks tidak ada di daftar pustaka**
+1. ~~**Hanya 1 dari 19 referensi yang benar (94.7% bermasalah)**~~ → **SEBAGIAN DIPERBAIKI di revisi**, 13 entri fabrikasi dihapus, Zein & Eriana sekarang benar. **TETAPI** masih ada 3 entri baru yang tidak ditemukan (Patmah, Chudri, Wahyu) dan 1 jurnal palsu baru ("Golden Gate Multidisiplin")
+2. ~~**4 nama jurnal palsu**~~ → **3 dari 4 jurnal palsu sudah dihapus**. Tersisa potensi 1 jurnal palsu baru: **"Golden Gate Multidisiplin"**
+3. ~~**3 paper asli dipalsukan**~~ → **Zein & Eriana sekarang benar**. Lessy sudah dihapus. **Perlu dicek** apakah Fitria & Yadi sudah diperbaiki. **Masalah baru**: "Aroob" seharusnya Jamaluddin et al./Asrobi, "Hamawadi" seharusnya "Hamzanwadi"
+4. **[LEBIH BURUK] Teks Bab 2.1-2.5 masih mengutip ~40+ penulis fabrikasi** yang TIDAK ADA di daftar pustaka revisi. Gap antara kutipan teks dan daftar pustaka sekarang **lebih besar** dari sebelumnya. **Seluruh tinjauan pustaka harus ditulis ulang.**
 5. **Perbaiki typo "TABLEU" di judul** -- nama tools utama penelitian salah tulis
 6. **Cantumkan referensi Iddrus dkk. (2025)** yang menjadi dasar seluruh penelitian
 
