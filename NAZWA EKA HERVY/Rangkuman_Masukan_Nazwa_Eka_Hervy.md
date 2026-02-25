@@ -1,0 +1,15 @@
+# RANGKUMAN MASUKAN UNTUK NAZWA EKA HERVY
+
+Mahasiswa: NAZWA EKA HERVY (F1E122096)
+Judul: Pemodelan K-Means Clustering untuk Eksplorasi Pola Distribusi Kinerja Tri Dharma Dosen Berdasarkan Data BKD di Universitas Jambi
+File Sumber: NAZWA EKA HERVY\01_Daftar_Pertanyaan_dan_Kesalahan_Konsep.md, 02_Daftar_Kesalahan_Penulisan.md
+
+---
+
+## Masukan Utama
+
+1) Daftar pustaka hanya memuat 19 entri padahal 50+ referensi dikutip dalam teks sehingga 40+ referensi hilang termasuk yang dikutip berulang seperti Fransiska 2022 di 4 halaman dan Sufairoh et al. 2023 di 4 halaman, entri CRISP-DM menulis nama perusahaan (Ncr, Spss, Daimlerchrysler) sebagai nama penulis padahal seharusnya Chapman, Clinton, Kerber, Khabaza, Reinartz, Shearer, dan Wirth (2000) karena NCR SPSS DaimlerChrysler adalah afiliasi bukan nama orang, referensi Pratama et al. punya 3 kesalahan sekaligus yaitu di hal. 1 dan 3 tidak pakai "et al." padahal ada 3 penulis termasuk Kusrini lalu tahun salah 2024 seharusnya 2026 di Tabel 2 hal. 22 dan Kusrini dihilangkan di daftar pustaka hal. 37, format koma sebelum "et al." di hal. 2 dan 3 yaitu "Dewi, et al." tidak sesuai APA yang seharusnya tanpa koma, serta format APA dan Harvard tercampur dalam satu daftar pustaka. 2) Judul "Pemodelan" kontradiktif dengan "Eksplorasi" karena pemodelan mengimplikasikan model prediktif sedangkan eksplorasi adalah pencarian pola sehingga lebih tepat "Penerapan" atau "Analisis", batasan masalah hal. 5 menyebut 3 pilar Tri Dharma tetapi Tabel 3 hal. 30 memuat 4 variabel termasuk Kegiatan Penunjang yang bukan Tri Dharma menurut UU 12/2012, satuan ambigu antara "proporsi persentase SKS riil" di batasan masalah dan "SKS" absolut di Tabel 3 yang berimplikasi pada compositional data karena jika proporsi maka K-Means dengan Euclidean distance tidak tepat, angka "wajib minimal 6 SKS" hal. 1 tidak sesuai regulasi BKD manapun padahal hal. 8 dan 10 sudah menyebut angka yang benar yaitu 9 SKS dan 3 SKS, Deployment CRISP-DM hal. 28 disamakan dengan visualisasi padahal menurut Chapman et al. seharusnya implementasi ke proses bisnis, kontradiksi klaim "tidak ada noise" hal. 21 untuk justifikasi K-Means tetapi tetap rencanakan outlier detection dengan IQR/Z-score hal. 32, klaim SLR hal. 25 tanpa protokol PRISMA sehingga lebih mendekati narrative review, dan tidak ada kriteria formal penghubung Clustering Tahap 1 dan Tahap 2 maupun kriteria homogenitas internal cluster. 3) Italic tidak konsisten untuk istilah asing termasuk unsupervised learning, library Python hal. 14, update step dan assignment step hal. 15, insight hal. 17, dan outcome-based education hal. 2, spasi hilang di penomoran sub-bab "1.1Latar Belakang" "1.2Rumusan Masalah" "1.4Manfaat Penelitian" padahal "1.5 Batasan Masalah" sudah benar, huruf kapital "Masyarakat" hal. 7 seharusnya huruf kecil karena di tengah kalimat bukan nama diri, singkatan ANN dan GMM hal. 14 serta t-SNE hal. 28 tanpa penjelasan saat pertama muncul, dan istilah clustering ditulis 4 variasi berbeda serta K-Means dan data mining juga tidak konsisten di seluruh dokumen.
+
+---
+
+Tanggal: 25 Februari 2026
